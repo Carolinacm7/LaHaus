@@ -24,6 +24,7 @@
 .main-header {
     font-size: 1.4rem;
     font-family: var(--font-family-base);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Menu*/
@@ -41,6 +42,8 @@ header label:hover {
     cursor: pointer;
     font-weight: 500px;
 }
+
+
 /* @media (max-width:920px) {
 
     header label{
@@ -147,15 +150,20 @@ header label:hover {
 .logo-haus {
     width: 124px;
     height: 23px;
+    margin-right: 262px;
+    margin-top: 14px;
+    margin-left: 21px;
 }
 
 #botton-menu {
     display: none;
 }
 
+
+
 /* Dropdow Explore*/
 
-.dropbtn-explore ,.dropbtn-buy{
+.dropbtn-explore ,.dropbtn-buy ,.dropbtn-invest ,.dropbtn-log-in{
     background-color: var(--color-white);
     color: var(--color-primary);
     padding: 16px;
@@ -164,19 +172,22 @@ header label:hover {
     cursor: pointer;
 }
 
-.dropdown-explore ,.dropdown-buy {
+.dropdown-explore ,.dropdown-buy , .dropdown-invest ,.dropdown-log-in {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-explore-content,.dropdown-buy-content {
+.dropdown-explore-content,.dropdown-buy-content ,.dropdown-invest-content ,.dropdown-log-in-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 92px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;    
 }
+.dropdown-explore-content,.dropdown-buy-content ,.dropdown-invest-content{
+    box-shadow: 0px 92px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 
 .dropdown-explore-content  a {
     text-decoration: none;
@@ -189,10 +200,10 @@ header label:hover {
 .dropdown-explore:hover .dropdown-explore-content{
     display: block;
     padding: 50px;
-    left:-128px;
+    left: -419px;
 }
 
-.dropdown-explore:hover .dropbtn-explore ,.dropdown-buy:hover .dropbtn-buy {
+.dropdown-explore:hover .dropbtn-explore  {
     background-color: var(--color-white);
     border-bottom: 3px solid var(--color-primary);
 }
@@ -269,7 +280,11 @@ header label:hover {
 .dropdown-buy:hover .dropdown-buy-content{
     display: block;
     padding: 55px 117px;
-    left: -338px;
+    left: -611px;
+}
+.dropdown-buy:hover .dropbtn-buy  {
+    background-color: var(--color-white);
+    border-bottom: 3px solid var(--color-primary);
 }
 .container-buy{
     width: 117%;
@@ -286,7 +301,8 @@ header label:hover {
     margin: 0;
     list-style: none;
     display: grid;
-    align-content: center;
+    
+    justify-items: center;
     grid-template-columns:370px 370px;
     grid-gap: 2px 5px;
     font-size: 0.9rem;
@@ -317,14 +333,148 @@ header label:hover {
 }
 /* End dropdown Buy*/
 
+/* dropdown invest */
 
+.dropdown-invest:hover .dropdown-invest-content {
+    display: block;
+    padding: 55px 242px;
+    left: -767px;
+  }
+  .dropdown-invest:hover .dropbtn-invest  {
+    background-color: var(--color-white);
+    border-bottom: 3px solid var(--color-primary);
+}
+.container-invest{
+     width: 2589px;
+  }
 
+.title-invest-dw {
+    width: 25%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-size: 1.3rem;
+    font-weight: 100;   
+    text-align: center; 
+}
 
+.container-cards{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 450px 450px;
+    grid-gap: 2px 5px;
+    font-size: 0.9rem;
+}
 
+.card{
+    position: relative;
+    background-color:#D8E6F2;
+    width: 89%;
+    padding: 7%;
+    border-radius: 10px;
+}
 
+.card-img{
+    position: absolute;
+    top: -38px;
+    left: 16px;
+}
 
+.title-card {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
 
+.text-plus{
+    padding-bottom: 30px;
+}
 
+.text-lz{
+    padding-bottom: 30px;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.card li {
+    list-style: none;
+    display: inline;
+}
+
+/* dropdown end invest */
+/* dropdown log in */
+.dropdown-log-in-content{
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 190px;
+}
+.dropdown-log-in  a {
+    text-decoration: none;
+}
+
+.dropdown-log-in  a:hover {
+    font-weight: bolder;
+}
+
+.dropdown-log-in:hover .dropdown-log-in-content{
+    display: block;
+    right: -32px;
+}
+
+.dropdown-log-in:hover .dropbtn-log-in  {
+    background-color: var(--color-white);
+    border-bottom: 3px solid var(--color-primary);
+}
+.dropdown-log-in li {
+    list-style: none;
+
+}
+.btn-in{
+    margin: 10px;
+    padding: 5px 41px;
+    background-color: #D8E6F2;
+    color: var(--color-blue);
+    border:1px solid var(--color-blue);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 170px;
+}
+.btn-in a {
+    color: var(--color-blue);
+}
+.btn-asr{
+    background: none;
+    border: none;
+    margin: 10px ;
+    padding: 5px; 
+    width: 170px;
+}
+.btn-asr a {
+    color: var(--color-primary);
+}
+/* End dropdown log in */
+.btn-pg {
+    padding: 8px;
+    background-color: #D8E6F2;
+    color: var(--color-blue);
+    border:1px solid var(--color-blue);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 130px;
+}
+.btn-pg a {
+text-decoration: none;
+color: var(--color-blue);
+
+}
+.btn-pg  a:hover {
+    font-weight: bolder;
+}
 
 /* end Header */
 
