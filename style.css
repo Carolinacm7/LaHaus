@@ -31,7 +31,6 @@
 .icono-menu {
     padding-top: 30px;
 }
-
 header label {
     display: none;
     width: 100px;
@@ -40,198 +39,9 @@ header label {
 
 header label:hover {
     cursor: pointer;
-    /* Cursor pasa a ser manita  */
     font-weight: 500px;
 }
-
-/* Menu Desktop*/
-.logo-haus {
-    width: 124px;
-    height: 23px;
-}
-
-#botton-menu {
-    display: none;
-}
-
-.dropbtn {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-explore {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-explore-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 84px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    padding: 5%;
-    
-}
-
-.dropdown-explore-content a {
-    text-decoration: none;
-}
-
-.dropdown-explore-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown-explore:hover .dropdown-explore-content {
-    display: block;
-    padding: 60px;
-    left:-128px;
-}
-
-.dropdown-explore:hover .dropbtn {
-    background-color: var(--color-white);
-    border-bottom: 3px solid var(--color-primary);
-}
-.container-explore{
-    width: 108%;
-}
-.panel-dropdown-explore {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.img-explore{
-    padding-top: 9.6rem;
-    padding-bottom: 9.6rem;
-    max-width: 100%;
-    height: auto;
-}
-.explore-text{
-   
-    padding-left: 75px;
-    
-}
-.title-explore-dw{
-    width:50%;
-    padding-bottom: 2.4rem;
-    font-size: 1.3rem;
-    font-weight: 100;
-    
-}
-.explore-text p{
-    font-weight: 800;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-}
-
-
-.menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 300px 300px 300px;
-    grid-gap: 2px 5px;
-    font-size: 0.9rem;
-}
-
-.menu li {
-    position: relative;
-    font-weight: 400;
-    padding: 1rem 0;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: var(--color-primary);
-}
-
-.menu li a:hover {
-    color: var(--color-blue);
-    font-weight: 500;
-}
-
-.menu li span {
-    background-color: rgb(0, 208, 175, 0.4);
-    margin: 5px;
-    border-radius: 5px;
-    padding: 2.5px;
-    font-size: 0.77rem;
-}
-
-
-
-/* end header */
-
-/* 
-interno explore
-
-
-.panel-dropdown-explore{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:no-wrap;
-    
-}
-
-
-
-
-.explore-img{
-width: 100%;
-}
-.title-explore-dw{
-    font-size: 1.3rem;
-    font-weight: 100;
-}
-.explore-text{
-    padding-top: 0.875rem;
-    padding-bottom: 2.4rem;
-    width: 825px;
-}
-
-
-.dropdown-content a {
-    padding: 16px 16px;
-    text-decoration: none;
-    display: block;
-   
-}
-
-
-.dropdown-content a:hover{
-    background-color: salmon;
-}
-
-.dropdown:hover .dropbtn{
-   
-    text-decoration:none;
-}
-.cities-links{
-    display: grid;
-   
-     grid-gap: 10px;
-    color: #012d26;
-    font-size: 1.4rem;
-    align-items: center;
-    outline: none;
-    box-sizing: border-box;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s ease-out;
-    user-select: none;
-    letter-spacing: .02rem;}
-
-    
-
-@media (max-width:920px) {
+/* @media (max-width:920px) {
 
     header label{
         display: block;
@@ -240,7 +50,6 @@ width: 100%;
 
     .menu {
         position: absolute;
-      
         width: 100%;
         margin-left: -100%;
         transition:all 0.5s;
@@ -280,7 +89,6 @@ width: 100%;
         color: salmon;
        
     }
-
 
 }
 @media (max-width:920px) {
@@ -335,3 +143,195 @@ width: 100%;
 
 }
  */
+/* Menu Desktop*/
+.logo-haus {
+    width: 124px;
+    height: 23px;
+}
+
+#botton-menu {
+    display: none;
+}
+
+/* Dropdow Explore*/
+
+.dropbtn-explore ,.dropbtn-buy{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-explore ,.dropdown-buy {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-explore-content,.dropdown-buy-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 92px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;    
+}
+
+.dropdown-explore-content  a {
+    text-decoration: none;
+}
+
+.dropdown-explore-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-explore:hover .dropdown-explore-content{
+    display: block;
+    padding: 50px;
+    left:-128px;
+}
+
+.dropdown-explore:hover .dropbtn-explore ,.dropdown-buy:hover .dropbtn-buy {
+    background-color: var(--color-white);
+    border-bottom: 3px solid var(--color-primary);
+}
+.container-explore{
+    width: 108%;
+}
+.panel-dropdown-explore ,.panel-dropdown-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-explore , .img-buy{
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    max-width: 100%;
+    height: auto;
+}
+.explore-text , .buy-text  {
+    padding-left: 75px;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+.title-explore-dw {
+    width:50%;
+    padding-bottom: 2.4rem;
+    font-size: 1.3rem;
+    font-weight: 100;    
+}
+.explore-text ,.buy-text p{
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.menu .dropdown-explore  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 2px 5px;
+    font-size: 0.9rem;
+}
+
+.menu .dropdown-explore li {
+    position: relative;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.menu .dropdown-explore  li a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.menu .dropdown-explore li a:hover {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+.menu .dropdown-explore li span {
+    background-color: rgb(0, 208, 175, 0.4);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 2.5px;
+    font-size: 0.77rem;
+}
+/* End Dropdow Explore*/
+
+/* dropdown Buy*/
+
+.dropdown-buy:hover .dropdown-buy-content{
+    display: block;
+    padding: 55px 117px;
+    left: -338px;
+}
+.container-buy{
+    width: 117%;
+}
+.title-buy-dw {
+    width:50%;
+    padding-bottom: 2.4rem;
+    font-size: 1.3rem;
+    font-weight: 100;    
+}
+
+.menu .dropdown-buy  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    align-content: center;
+    grid-template-columns:370px 370px;
+    grid-gap: 2px 5px;
+    font-size: 0.9rem;
+}
+
+.menu .dropdown-buy li {
+    position: relative;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.menu .dropdown-buy li a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.menu .dropdown-buy li a:hover {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+.menu .dropdown-buy li span {
+    background-color: rgb(0, 208, 175, 0.4);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 2.5px;
+    font-size: 0.77rem;
+}
+/* End dropdown Buy*/
+
+
+
+
+
+
+
+
+
+
+/* end Header */
+
+
+
+
+
+
+
+
