@@ -9,6 +9,7 @@
     --color-primary: #012d26;
     --color-white: #ffff;
     --color-blue: #3948ff;
+    --color-backgraund:#D8E6F2;
     --font-family-base: 'silka', Helvetica, Arial, sans-serif;
 }
 
@@ -477,9 +478,40 @@ color: var(--color-blue);
 }
 
 /* end Header */
+/* section */
+.dropbtn-type {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .dropdown-type {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-type-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-type-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-type-content a:hover {background-color: var(--color-backgraund)}
 
-
-
+  .dropdown-type:hover .dropdown-type-content {
+    display: block;
+  }
+  .dropdown-type:hover .dropbtn-type {
+    background-color: #3e8e41;
+  }
 
 
 
