@@ -896,7 +896,7 @@ section.it-possible {
     font-family: var(--font-family-base);
 }
 
-.title-possible {
+section.it-possible.title-possible {
     margin: 20px;
     font-size: 1.9rem;
 }
@@ -947,3 +947,86 @@ section.it-possible {
 }
 
 /*container end  How we make it possible/*
+
+/* container log  in la haus plus */
+.login-plus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+    align-items: center;
+    align-content: center;
+    background-color: #f8f8f8;
+    max-width: 1138px;
+    height: 41px;
+    margin: 34px 150px;
+    cursor: pointer;
+  }
+
+  .title-login-plus{
+      font-family: var(--font-family-base);
+      
+  }
+
+  .title-login-plus span {
+      color: var(--color-blue);
+  }
+  .btn-login-plus{
+    padding: 15px 45px;
+    background-color: var(--color-blue);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .btn-login-plus a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+/* section where live */
+
+.grid-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-images>* {
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 20px;
+  width: 23vw;
+  height: 300px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  flex-grow: 2;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+.inner.one{
+background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/proyectos.jpg?auto=compress,enhance,format&q=60");
+}
+
+.full {
+  height: 277px;
+  background: aqua;
+}
+
+.card.place {
+  padding: 0em;
+  height: auto;
+}
+
+.place-slider .slick-slide {
+  padding: 2em 0em;
+}
+.text{
+  color: white;
+}
+
