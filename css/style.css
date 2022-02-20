@@ -1,246 +1,268 @@
 @font-face {
     font-family: silka;
     src: url(./fonts/silka-regular-webfont.woff2);
-    }
-    
-    :root {
+}
+
+:root {
     /* para que sea una variable necesito -- */
     /* colors */
     --color-primary: #012d26;
     --color-white: #ffff;
     --color-blue: #3948ff;
-    --color-backgraund:#D8E6F2;
+    --color-backgraund: #D8E6F2;
     --font-family-base: 'silka', Helvetica, Arial, sans-serif;
-    }
-    
-    *,
-    *:before,
-    *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    }
-    
-    /* Header */
-    .main-header {
+}
+
+/* Header */
+.main-header {
     font-size: 1.4rem;
     font-family: var(--font-family-base);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Menu*/
-    /* Menu Mobile */
-    .icono-menu {
+}
+
+/* Menu*/
+/* Menu Mobile */
+.icono-menu {
     padding-top: 30px;
-    }
-    header label {
+}
+
+header label {
     display: none;
     width: 100px;
     padding: 10px;
-    }
-    
-    header label:hover {
+}
+
+header label:hover {
     cursor: pointer;
     font-weight: 500px;
-    }
-    
-    
-    /* @media (max-width:920px) {
-    
-    header label{
-    display: block;
-    height: 75px;
-    }
-    
-    .menu {
-    position: absolute;
-    width: 100%;
-    margin-left: -100%;
-    transition:all 0.5s;
-    z-index: 100;
-    }
-    
-    #boton-menu:checked ~ .menu {
-    margin: 0;
-    
-    }
-    
-    .menu ul{
-    display: block;
-    }
-    
-    .menu li:hover{
-    background-color: #000000;
-    }
-    
-    .dropbtn{
-    background-color: salmon;
-    color: white;
-    }
-    
-    .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 16px 16px;
-    text-decoration: none;
-    display: block;
-    }
-    .dropdown-content a:hover{
-    color: salmon;
-    
-    }
-    
-    .dropdown:hover .dropbtn {
-    color: salmon;
-    
-    }
-    
-    }
-    @media (max-width:920px) {
-    
-    header label{
-    display: block;
-    height: 75px;
-    }
-    
-    .menu {
-    position: absolute;
-    background-color: salmon;
-    width: 100%;
-    margin-left: -100%;
-    transition:all 0.5s;
-    z-index: 100;
-    }
-    
-    #boton-menu:checked ~ .menu {
-    
-    margin: 0;
-    
-    }
-    
-    .menu ul{
-    display: block;
-    }
-    
-    .menu li:hover{
-    background-color: #000000;
-    }
-    
-    .dropbtn{
-    background-color: salmon;
-    color: white;
-    }
-    
-    .dropdown-content a {
-    color: rgb(255, 255, 255);
-    }
-    
-    .dropdown-content a:hover{
-    color: salmon;
-    background-color: #000000;
-    }
-    
-    .dropdown:hover .dropbtn {
-    color: salmon;
-    background-color: #000000;
-    }
-    
-    
-    }
-    */
-    /* Menu Desktop*/
-    .logo-haus {
+}
+
+
+/* @media (max-width:920px) {
+
+header label{
+display: block;
+height: 75px;
+}
+
+.menu {
+position: absolute;
+width: 100%;
+margin-left: -100%;
+transition:all 0.5s;
+z-index: 100;
+}
+
+#boton-menu:checked ~ .menu {
+margin: 0;
+
+}
+
+.menu ul{
+display: block;
+}
+
+.menu li:hover{
+background-color: #000000;
+}
+
+.dropbtn{
+background-color: salmon;
+color: white;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 16px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover{
+color: salmon;
+
+}
+
+.dropdown:hover .dropbtn {
+color: salmon;
+
+}
+
+}
+@media (max-width:920px) {
+
+header label{
+display: block;
+height: 75px;
+}
+
+.menu {
+position: absolute;
+background-color: salmon;
+width: 100%;
+margin-left: -100%;
+transition:all 0.5s;
+z-index: 100;
+}
+
+#boton-menu:checked ~ .menu {
+
+margin: 0;
+
+}
+
+.menu ul{
+display: block;
+}
+
+.menu li:hover{
+background-color: #000000;
+}
+
+.dropbtn{
+background-color: salmon;
+color: white;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover{
+color: salmon;
+background-color: #000000;
+}
+
+.dropdown:hover .dropbtn {
+color: salmon;
+background-color: #000000;
+}
+
+
+}
+*/
+/* Menu Desktop*/
+.logo-haus {
     width: 124px;
     height: 23px;
-    margin-right: 262px;
+    margin-right: 186px;
     margin-top: 14px;
     margin-left: 21px;
-    }
-    
-    #botton-menu {
+}
+
+#botton-menu {
     display: none;
-    }
-    
-    
-    
-    /* Dropdow explore properties*/
-    
-    .dropbtn-explore ,.dropbtn-buy ,.dropbtn-invest ,.dropbtn-log-in{
+}
+
+
+
+/* Dropdow explore properties*/
+
+.dropbtn-explore,
+.dropbtn-buy,
+.dropbtn-invest {
     background-color: var(--color-white);
     color: var(--color-primary);
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    }
-    
-    .dropdown-explore ,.dropdown-buy , .dropdown-invest ,.dropdown-log-in {
+}
+
+.dropdown-explore,
+.dropdown-buy,
+.dropdown-invest,
+.dropdown-log-in {
     position: relative;
     display: inline-block;
-    }
-    
-    .dropdown-explore-content,.dropdown-buy-content ,.dropdown-invest-content ,.dropdown-log-in-content {
+}
+
+.dropdown-explore-content,
+.dropdown-buy-content,
+.dropdown-invest-content,
+.dropdown-log-in-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     z-index: 1;
-    }
-    .dropdown-explore-content,.dropdown-buy-content ,.dropdown-invest-content{
+}
+
+.dropdown-explore-content,
+.dropdown-buy-content,
+.dropdown-invest-content {
     box-shadow: 0px 92px 16px 0px rgba(0, 0, 0, 0.2);
-    }
-    
-    
-    .dropdown-explore-content a {
+}
+
+
+.dropdown-explore-content a {
     text-decoration: none;
-    }
-    
-    .dropdown-explore-content a:hover {
+}
+
+.dropdown-explore-content a:hover {
     background-color: #f1f1f1;
-    }
-    
-    .dropdown-explore:hover .dropdown-explore-content{
+}
+
+.dropdown-explore:hover .dropdown-explore-content {
     display: block;
     padding: 50px;
     left: -419px;
-    }
-    
-    .dropdown-explore:hover .dropbtn-explore {
+}
+
+.dropdown-explore:hover .dropbtn-explore {
     background-color: var(--color-white);
     border-bottom: 3px solid var(--color-primary);
-    }
-    .container-explore{
+}
+
+.container-explore {
     width: 1478px;
-    }
-    .panel-dropdown-explore ,.panel-dropdown-buy {
+}
+
+.panel-dropdown-explore,
+.panel-dropdown-buy {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    }
-    .img-explore , .img-buy{
+}
+
+.img-explore,
+.img-buy {
     padding-top: 9.6rem;
     padding-bottom: 9.6rem;
     max-width: 100%;
     height: auto;
-    }
-    .explore-text , .buy-text {
+}
+
+.explore-text,
+.buy-text {
     padding-left: 75px;
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-    }
-    .title-explore-dw {
-    width:50%;
+}
+
+.title-explore-dw {
+    width: 50%;
     padding-bottom: 2.4rem;
     font-size: 1.3rem;
     font-weight: 100;
-    }
-    .explore-text ,.buy-text p{
+}
+
+.explore-text,
+.buy-text p {
     font-weight: 800;
     margin-bottom: 2rem;
     font-size: 1.2rem;
-    }
-    
-    .menu .dropdown-explore ul {
+}
+
+.menu .dropdown-explore ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -249,114 +271,121 @@
     grid-template-columns: 300px 300px 300px;
     grid-gap: 2px 5px;
     font-size: 0.9rem;
-    }
-    
-    .menu .dropdown-explore li {
+}
+
+.menu .dropdown-explore li {
     position: relative;
     font-weight: 400;
     padding: 1rem 0;
-    }
-    
-    .menu .dropdown-explore li a {
+}
+
+.menu .dropdown-explore li a {
     text-decoration: none;
     color: var(--color-primary);
-    }
-    
-    .menu .dropdown-explore li a:hover {
+}
+
+.menu .dropdown-explore li a:hover {
     color: var(--color-blue);
     font-weight: 500;
-    }
-    
-    .menu .dropdown-explore li span {
+}
+
+.menu .dropdown-explore li span {
     background-color: rgb(0, 208, 175, 0.4);
     margin: 5px;
     border-radius: 5px;
     padding: 2.5px;
     font-size: 0.77rem;
-    }
-    /* End Dropdow explore properties*/
-    /* dropdown how to buy */
-    
-    .dropdown-buy:hover .dropdown-buy-content{
+}
+
+/* End Dropdow explore properties*/
+/* dropdown how to buy */
+
+.dropdown-buy:hover .dropdown-buy-content {
     display: block;
     padding: 55px 117px;
-    left: -694px;
-    }
-    .dropdown-buy:hover .dropbtn-buy {
+    left: -576px;
+}
+
+.dropdown-buy:hover .dropbtn-buy {
     background-color: var(--color-white);
     border-bottom: 3px solid var(--color-primary);
-    }
-    .container-buy{
+}
+
+.container-buy {
     width: 1257px;
-    }
-    .title-buy-dw {
-    width:50%;
+}
+
+.title-buy-dw {
+    width: 50%;
     padding-bottom: 2.4rem;
     font-size: 1.3rem;
     font-weight: 100;
-    }
-    
-    .menu .dropdown-buy ul {
+}
+
+.menu .dropdown-buy ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: grid;
     justify-items: center;
-    grid-template-columns:370px 370px;
+    grid-template-columns: 370px 370px;
     grid-gap: 2px 5px;
     font-size: 0.9rem;
-    }
-    
-    .menu .dropdown-buy li {
+}
+
+.menu .dropdown-buy li {
     position: relative;
     font-weight: 400;
     padding: 1rem 0;
-    }
-    
-    .menu .dropdown-buy li a {
+}
+
+.menu .dropdown-buy li a {
     text-decoration: none;
     color: var(--color-primary);
-    }
-    
-    .menu .dropdown-buy li a:hover {
+}
+
+.menu .dropdown-buy li a:hover {
     color: var(--color-blue);
     font-weight: 500;
-    }
-    
-    .menu .dropdown-buy li span {
+}
+
+.menu .dropdown-buy li span {
     background-color: rgb(0, 208, 175, 0.4);
     margin: 5px;
     border-radius: 5px;
     padding: 2.5px;
     font-size: 0.77rem;
-    }
-    /* End dropdown how to buy */
-    
-    /* dropdown invest */
-    
-    .dropdown-invest:hover .dropdown-invest-content {
+}
+
+/* End dropdown how to buy */
+
+/* dropdown invest */
+
+.dropdown-invest:hover .dropdown-invest-content {
     display: block;
     padding: 55px 242px;
-    left: -819px;
-    }
-    .dropdown-invest:hover .dropbtn-invest {
+    left: -702px;
+}
+
+.dropdown-invest:hover .dropbtn-invest {
     background-color: var(--color-white);
     border-bottom: 3px solid var(--color-primary);
-    }
-    .container-invest{
+}
+
+.container-invest {
     width: 2589px;
-    }
-    
-    .title-invest-dw {
+}
+
+.title-invest-dw {
     width: 25%;
     padding-bottom: 3%;
     padding-left: 5%;
     font-size: 1.3rem;
     font-weight: 100;
     text-align: center;
-    }
-    
-    .container-cards-invest{
+}
+
+.container-cards-invest {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -365,119 +394,142 @@
     grid-template-columns: 450px 450px;
     grid-gap: 2px 5px;
     font-size: 0.9rem;
-    }
-    
-    .card-invest{
+}
+
+.card-invest {
     position: relative;
-    background-color:#D8E6F2;
+    background-color: #D8E6F2;
     width: 89%;
     padding: 7%;
     border-radius: 10px;
-    }
-    
-    .card-invest-img{
+}
+
+.card-invest-img {
     position: absolute;
     top: -38px;
     left: 16px;
-    }
-    
-    .title-card {
+}
+
+.title-card {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
     padding-bottom: 25px;
-    }
-    
-    .text-plus{
+}
+
+.text-plus {
     padding-bottom: 30px;
-    }
-    
-    .text-lz{
+}
+
+.text-lz {
     padding-bottom: 30px;
-    }
-    
-    .card-invest a {
+}
+
+.card-invest a {
     text-decoration: none;
     color: var(--color-blue);
-    }
-    
-    .card-invest li {
+}
+
+.card-invest li {
     list-style: none;
     display: inline;
-    }
-    
-    /* dropdown end invest */
-    /* dropdown log in */
-    .dropdown-log-in-content{
+}
+
+/* dropdown end invest */
+/* dropdown log in */
+.dropbtn-log-in {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: 10px 31px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-log-in-content {
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
     width: 190px;
-    }
-    .dropdown-log-in a {
+}
+
+.dropdown-log-in a {
     text-decoration: none;
-    }
-    
-    .dropdown-log-in a:hover {
+}
+
+.dropdown-log-in a:hover {
     font-weight: bolder;
-    }
-    
-    .dropdown-log-in:hover .dropdown-log-in-content{
+}
+
+.dropdown-log-in:hover .dropdown-log-in-content {
     display: block;
-    right: -32px;
-    }
-    
-    .dropdown-log-in:hover .dropbtn-log-in {
+    right: 3px;
+    margin: 1px;
+}
+
+.dropdown-log-in:hover .dropbtn-log-in {
     background-color: var(--color-white);
     border-bottom: 3px solid var(--color-primary);
-    }
-    .dropdown-log-in li {
+}
+
+.dropdown-log-in li {
     list-style: none;
-    
-    }
-    .btn-in{
+
+}
+
+.btn-in {
     margin: 10px;
     padding: 5px 41px;
     background-color: #D8E6F2;
     color: var(--color-blue);
-    border:1px solid var(--color-blue);
+    border: 1px solid var(--color-blue);
     border-radius: 5px;
     font-size: 1rem;
     width: 170px;
-    }
-    .btn-in a {
+}
+
+.btn-in a {
     color: var(--color-blue);
-    }
-    .btn-asr{
+}
+
+.btn-asr {
     background: none;
     border: none;
-    margin: 10px ;
+    margin: 10px;
     padding: 5px;
     width: 170px;
-    }
-    .btn-asr a {
+}
+
+.img-btn-asr {
+    margin: -5px 2px;
+}
+
+.btn-asr a {
     color: var(--color-primary);
-    }
-    /* End dropdown log in */
-    .btn-pg {
+}
+
+/* End dropdown log in */
+.btn-pg {
     padding: 8px;
     background-color: #D8E6F2;
     color: var(--color-blue);
-    border:1px solid var(--color-blue);
+    border: 1px solid var(--color-blue);
     border-radius: 5px;
     font-size: 1rem;
     width: 130px;
-    }
-    .btn-pg a {
+}
+
+.btn-pg a {
     text-decoration: none;
     color: var(--color-blue);
-    
-    }
-    .btn-pg a:hover {
+
+}
+
+.btn-pg a:hover {
     font-weight: bolder;
-    }
-    
-    /* end Header */
-    /* section */
-    .search-location{
+}
+
+/* end Header */
+/* section search-location */
+.search-location {
     background-image: url(../resources/imagenes/background-banner.jpg);
     height: 490px;
     background-repeat: no-repeat;
@@ -485,11 +537,13 @@
     background-position-y: 20%;
     background-position-x: center;
     font-family: var(--font-family-base);
-    }
-    .search-location ul li {
+}
+
+.search-location ul li {
     list-style: none;
-    }
-    .search-location .link-search {
+}
+
+.search-location .link-search {
     color: var(--color-white);
     text-decoration: none;
     display: flex;
@@ -497,8 +551,9 @@
     justify-content: flex-end;
     align-content: flex-start;
     padding: 65px 95px;
-    }
-    .search-location .title-banner{
+}
+
+.search-location .title-banner {
     font-size: 4rem;
     color: var(--color-white);
     display: flex;
@@ -506,96 +561,110 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    
-    }
-    .container-search{
-    display:flex;
+
+}
+
+.container-search {
+    display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding:1px 4px;
-    background-color:var(--color-white);
+    padding: 1px 4px;
+    background-color: var(--color-white);
     margin: 9px 140px;
-    border-radius:15px ;
-    }
-    .search{
+    border-radius: 15px;
+}
+
+.search {
     padding: 20px 0px;
     width: 261px;
-    }
-    
-    .search-place{
+}
+
+.search-place {
     border: none;
     width: 234px;
-    font-size: 1rem ;
-    }
-    
-    /* dropdown type of property */
-    .dropbtn-type, .dropbtn-room {
-    color:var(--color-primary);
+    font-size: 1rem;
+}
+
+/* dropdown type of property */
+.dropbtn-type,
+.dropbtn-room {
+    color: var(--color-primary);
     background-color: var(--color-white);
-    
+
     font-size: 1rem;
     cursor: pointer;
     border: none;
-    }
-    .dropbtn-type{
+}
+
+.dropbtn-type {
     padding: 20px 70px 20px 58px;
-    }
-    .dropdown-type ,.dropdown-room {
+}
+
+.dropdown-type,
+.dropdown-room {
     position: relative;
     display: inline-block;
-    }
-    .dropdown-type-content {
+}
+
+.dropdown-type-content {
     display: none;
     position: absolute;
     background-color: var(--color-white);
     min-width: 254px;
     z-index: 1;
     border-radius: 10px;
-    }
-    .dropdown-type-content a {
-    color:var(--color-primary);
+}
+
+.dropdown-type-content a {
+    color: var(--color-primary);
     padding: 15px;
     text-decoration: none;
     display: block;
-    }
-    .dropdown-type-content a:hover {
+}
+
+.dropdown-type-content a:hover {
     background-color: var(--color-backgraund)
-    }
-    .dropdown-type:hover .dropdown-type-content {
+}
+
+.dropdown-type:hover .dropdown-type-content {
     display: block;
-    }
-    .dropdown-type:hover .dropbtn-type {
+}
+
+.dropdown-type:hover .dropbtn-type {
     border: 1px solid var(--color-blue);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    }
-    /* dropdown room */
-    .dropbtn-room{
+}
+
+/* dropdown room */
+.dropbtn-room {
     padding: 20px 98px 20px 59px;
-    }
-    .dropdown-room-content{
+}
+
+.dropdown-room-content {
     display: none;
     position: absolute;
     background-color: var(--color-white);
     min-width: 247px;
     z-index: 1;
     border-radius: 10px;
-    }
-    .dropdown-room:hover .dropdown-room-content {
+}
+
+.dropdown-room:hover .dropdown-room-content {
     display: block;
-    }
-    
-    .dropdown-room:hover .dropbtn-room {
+}
+
+.dropdown-room:hover .dropbtn-room {
     border: 1px solid var(--color-blue);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    }
-    
-    .counter{
+}
+
+.counter {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -603,15 +672,17 @@
     padding: 20px 23px;
     align-content: center;
     justify-content: space-around;
-    }
-    .btn-counter{
+}
+
+.btn-counter {
     margin: 1px;
     padding: 5px;
     border-radius: 68px;
-    background-color:var(--color-white);
-    border:1px solid grey;
-    }
-    .btn-search{
+    background-color: var(--color-white);
+    border: 1px solid grey;
+}
+
+.btn-search {
     padding: 13px 57px;
     margin: 7px;
     background-color: var(--color-blue);
@@ -620,37 +691,232 @@
     color: var(--color-white);
     font-weight: 600;
     cursor: pointer;
+}
+
+/* section end search-location */
+
+/* section launches */
+.text-launches,
+.menu-slider-lauches {
+    width: 60%;
+}
+
+.launches {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(36, 52, 56, 58);
+    margin: 25px 45px;
+    border-radius: 25px;
+}
+
+.text-launches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--font-family-base);
+    color: var(--color-white);
+    padding: 45px;
+}
+
+.text-launches h2 {
+    width: 167px;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.text-launches p {
+    width: 332px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+
+}
+
+.text-launches button {
+    padding: 11px 26px;
+    font-size: 1rem;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 15px;
+}
+
+.text-launches a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+}
+
+.text-launches button a:hover {
+    color: var(--color-blue);
+
+}
+
+@media (max-width:768px) {
+    .launches {
+        flex-direction: column;
     }
-    /* container How we make it possible */
+}
+
+/* slider */
+.menu-slider-lauches .no-scroll {
+    overflow: hidden;
+}
+
+.menu-slider-lauches .container {
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+}
+
+.menu-slider-lauches .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.menu-slider-lauches .slick-slide {
+    padding: 2em 0.5em;
+}
+
+.menu-slider-lauches .card-slider {
+    margin: auto;
+    width: 100%;
+}
+
+.menu-slider-lauches .card {
+    display: flex;
+    padding: 2em;
+    border: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height:380px;
+    box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-white);
+    font-family: var(--font-family-base);
+}
+
+.menu-slider-lauches .card::before{
+    background: linear-gradient(180deg,rgba(28,41,44,.74) 22.92%,rgba(28,41,44,0) 76.04%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menu-slider-lauches .card.one{
+    background-image: url(https://lahaus.imgix.net/uploads/real_estate_attachment/picture/7727181/luna_etapa_2_apartamento_nuevos_en_venta_en_chia_con_gimnasio_cover_9caeda3ef34374a44088.jpg?auto=format,compress&q=90&w=580&fit=clip);
+}
+
+.menu-slider-lauches .card.two{
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1303/2__1_.jpg?auto=compress%2Cenhance%2Cformat&q=60);
     
-    .it-possible{
+}
+
+.menu-slider-lauches .card.three{
+    background-image: url(https://lahaus.imgix.net/uploads/real_estate_attachment/picture/7825275/yolo_apartamentos_en_venta_en_chico_norte_de_1_2_hab_cover_69087375c995c63c0b4f.jpg?auto=format,compress&q=90&w=580&fit=clip);
+}
+.menu-slider-lauches .card.four{
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1104/be_102_53.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+}
+
+
+.menu-slider-lauches .information-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-slider-lauches .card-category {
+    color: rgba(62, 207, 175, 1);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.2em 0.5em 0.25em;
+    position: relative;
+    bottom:194px;
+}
+
+.menu-slider-lauches .card-title {
+    position: relative;
+    color: var(--color-white);
+    bottom:176px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.menu-slider-lauches .description-text{
+    position: relative;
+    color: var(--color-white);
+    bottom: 162px;
+}
+
+.menu-slider-lauches .card-price{
+    position: relative;
+    bottom: 20px;
+}
+
+.menu-slider-lauches .card-price .card-price-text-title {
+    
+    font-weight: 500;
+    color: var(--color-primary);
+    position: relative;
+    bottom: 17px;
+}
+
+.menu-slider-lauches .card-price .card-price-text-p {
+    position: relative;
+    bottom: 9px;
+}
+
+.menu-slider-lauches .card-price .card-price-text-a{
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+/* section end  launches */
+
+/* container How we make it possible */
+section.it-possible {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--font-family-base);
-    }
-    
-    .title-possible{
+}
+
+.title-possible {
     margin: 20px;
     font-size: 1.9rem;
-    }
+}
 
-.cards-it-possible{
+.cards-it-possible {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: center;
 }
 
 .card-possible {
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-width: 304px;
-margin: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 304px;
+    margin: 25px;
 }
 
 .card-possible h3 {
@@ -658,27 +924,26 @@ margin: 25px;
     font-weight: 600;
     margin: 10px;
 }
-.img-card-possible{
+
+.img-card-possible {
     margin: 12px;
 }
 
-.img-card-possible-r, .img-card-possible-a {
+.img-card-possible-r,
+.img-card-possible-a {
     margin: 19px 5px;
 }
 
-.text-card-possible{
+.text-card-possible {
     text-align: center;
     font-family: var(--font-family-base);
 }
 
-.text-p{
+.text-p {
     width: 269px;
     font-size: 0.9rem;
     color: var(--color-primary);
     margin: 5px;
 }
+
 /*container end  How we make it possible/*
-
-
-
-

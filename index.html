@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- la Haus icons -->
     <link rel="stylesheet" href="https://use.fortawesome.com/kits/85c4cb2e/publications/117878/woff2.css" media="all">
+    <!-- slider styles -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -39,11 +43,11 @@
 
         <input type="checkbox" id="botton-menu">
         <label class="icono-menu" for="botton-menu">
-            <img class="log-menu" src="./resources/imagenes/iconomenu.png" alt="iconomenu">
+            <img class="log-menu" src="./resources/imagenes/iconomenu.png" alt="icono menu mobile">
         </label>
 
         <nav class="menu">
-            <img class="logo-haus" src="./resources/imagenes/logo-lahaus.svg" alt="icon-haus">
+            <img class="logo-haus" src="./resources/imagenes/logo-lahaus.svg" alt="logo haus">
 
             <!-- dropdown explore properties-->
             <div class="dropdown-explore">
@@ -52,7 +56,7 @@
                     <div class="container-explore">
                         <div class="panel-dropdown-explore">
                             <div class="explore-img">
-                                <img src="./resources/imagenes/explore.svg" alt="img-explore">
+                                <img src="./resources/imagenes/explore.svg" alt="pareja encuentra vivienda">
                             </div>
                             <div class="explore-text">
                                 <h2 class="title-explore-dw">Encuentra vivienda nueva o usada en la ciudad que
@@ -80,7 +84,8 @@
                     <div class="container-buy">
                         <div class="panel-dropdown-buy">
                             <div class="buy-img">
-                                <img src="./resources/imagenes/como-comprar.svg" alt="img-buy">
+                                <img src="./resources/imagenes/como-comprar.svg"
+                                    alt="chica usa herramientas para encontrar vivienda">
                             </div>
                             <div class="buy-text">
                                 <h2 class="title-buy-dw">Tips, guías y herramientas para comprar tu vivienda.
@@ -113,7 +118,7 @@
                             <div class="container-cards-invest">
                                 <div class="card-invest">
                                     <img class="card-invest-img" src="./resources/imagenes/La-Haus-Plus.svg"
-                                        alt="img-La-Haus-Plus">
+                                        alt="la propiedad que quieras con la haus plus">
                                     <div class="container-text">
                                         <h3 class="title-card">La Haus Plus</h3>
                                         <p class="text-plus">Escoge la propiedad que quieres, al mejor precio, antes
@@ -124,7 +129,7 @@
                                 </div>
                                 <div class="card-invest">
                                     <img class="card-invest-img" src="./resources/imagenes/lanzamiento-lahaus.svg"
-                                        alt="img-La-Haus-Plus">
+                                        alt="propiedades en lanzamientos de la haus">
                                     <div class="container-text">
                                         <h3 class="title-card">Lanzamientos La Haus</h3>
                                         <p class="text-lz">Aprovecha las primeras etapas de venta y selecciona tu
@@ -153,8 +158,9 @@
                         <div class="panel-dropdown-log-in">
                             <ul class="btn-log-in">
                                 <li><button class="btn-in"><a href="#">Ingresar</a></button></li>
-                                <li><button class="btn-asr"><img src="./resources/imagenes/asesoria-icono.png"
-                                            alt="icon-asesoria"><a href="#"> Recibir asesoría</a></button></li>
+                                <li><button class="btn-asr"><img class="img-btn-asr"
+                                            src="./resources/imagenes/asesoria-icono.png" alt="icon-asesoria"><a
+                                            href="#"> Recibir asesoría</a></button></li>
                             </ul>
                         </div>
                     </div>
@@ -205,7 +211,83 @@
                 </ul>
             </form>
         </section>
-
+        <!-- section launches-->
+        <section class="launches-lahaus">
+            <div class="launches">
+                <div class="text-launches">
+                    <h2>Lanzamientos La Haus</h2>
+                    <p>Encuentra propiedades a precio de lanzamiento y con los mejores esquemas de pago.</p>
+                    <button><a href="#">Conoce toda la oferta <i
+                                class="fa fa-arrow-right-light ml-lh-8"></i></a></button>
+                </div>
+                <div class="menu-slider-lauches">
+                    <div class="page" data-modal-state="closed">
+                        <div class="container">
+                            <div class="card-slider">
+                                <div class="card-wrapper">
+                                    <article class="card one">
+                                        <div class="card-category">
+                                            Disponible
+                                        </div>
+                                        <h3 class="card-title">Luna Etapa 2 (Vis)</h3>
+                                        <p class="description-text">Casco Urbano Chia,Chia </p>
+                                        <div class="card-price">
+                                            <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
+                                            <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                            <a class="card-price-text-a" href="#">Ver proyecto <i class="fa fa-arrow-right-light"></i></a>
+                                        </div>
+                                    
+                                    </article>
+                                </div>
+                                <div class="card-wrapper">
+                                    <article class="card two">
+                                        
+                                        <div class="card-category">
+                                            Disponible
+                                        </div>
+                                        <h3 class="card-title">Serendapia Deluxe</h3>
+                                        <p class="description-text">Chapinero Alto, Bogotá</p>
+                                        <div class="card-price">
+                                            <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
+                                            <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                            <a class="card-price-text-a" href="#">Ver proyecto <i class="fa fa-arrow-right-light"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="card-wrapper">
+                                    <article class="card three">
+                                        <div class="card-category">
+                                            Disponible
+                                        </div>
+                                        <h3 class="card-title">Yolo</h3>
+                                        <p class="description-text">Chico Norte, Bogotá</p>
+                                        <div class="card-price">
+                                            <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
+                                            <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                            <a class="card-price-text-a" href="#">Ver proyecto <i class="fa fa-arrow-right-light"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="card-wrapper">
+                                    <article class="card four">
+                                        <div class="card-category">
+                                            Disponible
+                                        </div>
+                                        <h3 class="card-title">BE 102-53</h3>
+                                        <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                        <div class="card-price">
+                                            <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
+                                            <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                            <a class="card-price-text-a" href="#">Ver proyecto <i class="fa fa-arrow-right-light"></i></a>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
         <!-- <section>
             <article class="container-soft-skill personal">
 
@@ -232,36 +314,50 @@
             <h1 class="title-possible">¿Cómo lo hacemos posible?</h1>
             <article class="cards-it-possible">
                 <div class="card-possible">
-                    <img class="img-card-possible" src="./resources/imagenes/disponibilidad.svg" alt="imagen vivienda disponibilidad grantizada">
+                    <img class="img-card-possible" src="./resources/imagenes/disponibilidad.svg"
+                        alt="imagen vivienda disponibilidad grantizada">
                     <div class="text-card-possible">
                         <h3>Disponibilidad garantizada</h3>
                         <p class="text-p">Encuentra la mayor oferta de vivienda nueva en la ciudad.</p>
                     </div>
                 </div>
                 <div class="card-possible">
-                    <img class="img-card-possible-r" src="./resources/imagenes/respaldo.svg" alt="imagen respaldo en la oferta ">
+                    <img class="img-card-possible-r" src="./resources/imagenes/respaldo.svg"
+                        alt="imagen respaldo en la oferta ">
                     <div class="text-card-possible">
                         <h3>Respaldo</h3>
-                        <p class="text-p"> ¡Eres nuestra prioridad! Evaluamos exhaustivamente nuestra oferta para que compres con la
+                        <p class="text-p"> ¡Eres nuestra prioridad! Evaluamos exhaustivamente nuestra oferta para que
+                            compres con la
                             mayor tranquilidad.</p>
                     </div>
                 </div>
 
                 <div class="card-possible">
-                    <img class="img-card-possible-a" src="./resources/imagenes/asistencia.svg" alt="imagen informacion de expertos">
+                    <img class="img-card-possible-a" src="./resources/imagenes/asistencia.svg"
+                        alt="imagen informacion de expertos">
                     <div class="text-card-possible">
                         <h3>Asistencia</h3>
-                        <p class="text-p">Te damos toda la información de nuestros expertos y aliados para que tomes la mejor decisión.
+                        <p class="text-p">Te damos toda la información de nuestros expertos y aliados para que tomes la
+                            mejor decisión.
                         </p>
                     </div>
                 </div>
             </article>
 
         </section>
+        <!-- log-in LaHaus Plus -->
+        <section>
+            <img src="./resources/imagenes/log-in-lahaus-plus.svg" alt="ingresa a lahaus plus">
+        </section>
 
 
     </main>
     <script src="./js/counter.js"></script>
+    <!-- script slider -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+    <script src="./script.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
