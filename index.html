@@ -110,9 +110,9 @@
                                 de
                                 vivienda.
                             </h2>
-                            <div class="container-cards">
-                                <div class="card">
-                                    <img class="card-img" src="./resources/imagenes/La-Haus-Plus.svg"
+                            <div class="container-cards-invest">
+                                <div class="card-invest">
+                                    <img class="card-invest-img" src="./resources/imagenes/La-Haus-Plus.svg"
                                         alt="img-La-Haus-Plus">
                                     <div class="container-text">
                                         <h3 class="title-card">La Haus Plus</h3>
@@ -122,8 +122,8 @@
                                         <a class="link-invest" href="#">Quiero ser el primero</a>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img class="card-img" src="./resources/imagenes/lanzamiento-lahaus.svg"
+                                <div class="card-invest">
+                                    <img class="card-invest-img" src="./resources/imagenes/lanzamiento-lahaus.svg"
                                         alt="img-La-Haus-Plus">
                                     <div class="container-text">
                                         <h3 class="title-card">Lanzamientos La Haus</h3>
@@ -173,36 +173,93 @@
             <form class="">
                 <ul class="container-search">
 
-                    <li class="search"><i class="fa fa-search cursor-pointer"></i><input class="search-place" type="search"
-                            placeholder="Buscar por ciudad,zona o barrio"></li>
+                    <li class="search"><i class="fa fa-search cursor-pointer"></i><input class="search-place"
+                            type="search" placeholder="Buscar por ciudad,zona o barrio"></li>
                     <li>
                         <!--dropdown type of property  -->
-                        <div class="dropdown-type">
+                        <article class="dropdown-type">
                             <button type="button" class="dropbtn-type">Tipo de propiedad</button>
                             <div class="dropdown-type-content">
                                 <a href="#"><i class="fa fa-apartment"></i> Proyecto de vivienda</a>
                                 <a href="#"><i class="fa fa-apartment"></i>Apartamentos</a>
                                 <a href="#"><i class="fa fa-home"></i> Casas</a>
                             </div>
-                        </div>
+                        </article>
                         <!--dropdown rooms -->
-                        <div class="dropdown-room">
+                        <article class="dropdown-room">
                             <button type="button" id="habs" class="dropbtn-room">Habitaciones</button>
                             <div class="dropdown-room-content">
                                 <div class="counter">
                                     <p>Habitaciones</p>
-                                    <button class="btn-counter" type="button" onclick="decrementCounter()"><i class="fa fa-less-icon"></i></button>
+                                    <button class="btn-counter" type="button" onclick="decrementCounter()"><i
+                                            class="fa fa-less-icon"></i></button>
                                     <h3 id="counter-label">0</h3>
-                                    <button class="btn-counter"type="button" onclick="incrementClick()"><i class="fa fa-add-icon"></i></button>
+                                    <button class="btn-counter" type="button" onclick="incrementClick()"><i
+                                            class="fa fa-add-icon"></i></button>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </li>
                     <!-- botton search -->
                     <li><button type="button" class="btn-search">Buscar</button></li>
                 </ul>
             </form>
         </section>
+
+        <!-- <section>
+            <article class="container-soft-skill personal">
+
+                <h1 class="skill-person-title">Lanzamientos</h1>
+                <b>
+                  <div class="innerpersonal">
+                    <span>
+                        <div>
+                            <h3></h3>
+                        </div>
+                      Creatividad<br />
+                      Trabajo en Equipo<br />
+                      Resolucion de problemas<br />
+                      Iniciativa<br />
+                      Organizacion
+                    </span>
+                  </div>
+                </b>
+          
+              </article>
+            </section> -->
+        <!-- container How we make it possible-->
+        <section class="it-possible">
+            <h1 class="title-possible">¿Cómo lo hacemos posible?</h1>
+            <article class="cards-it-possible">
+                <div class="card-possible">
+                    <img class="img-card-possible" src="./resources/imagenes/disponibilidad.svg" alt="imagen vivienda disponibilidad grantizada">
+                    <div class="text-card-possible">
+                        <h3>Disponibilidad garantizada</h3>
+                        <p class="text-p">Encuentra la mayor oferta de vivienda nueva en la ciudad.</p>
+                    </div>
+                </div>
+                <div class="card-possible">
+                    <img class="img-card-possible-r" src="./resources/imagenes/respaldo.svg" alt="imagen respaldo en la oferta ">
+                    <div class="text-card-possible">
+                        <h3>Respaldo</h3>
+                        <p class="text-p"> ¡Eres nuestra prioridad! Evaluamos exhaustivamente nuestra oferta para que compres con la
+                            mayor tranquilidad.</p>
+                    </div>
+                </div>
+
+                <div class="card-possible">
+                    <img class="img-card-possible-a" src="./resources/imagenes/asistencia.svg" alt="imagen informacion de expertos">
+                    <div class="text-card-possible">
+                        <h3>Asistencia</h3>
+                        <p class="text-p">Te damos toda la información de nuestros expertos y aliados para que tomes la mejor decisión.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+
     </main>
     <script src="./js/counter.js"></script>
 </body>
