@@ -5,27 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
     <title>La Haus más que una inmobiliaria ¡Compra finca raíz a tu ritmo!</title>
+    <meta name="description"
+        content="¿Buscas una inmobiliaria? Tenemos una buena noticia, somos mucho más. La tecnología y oferta de finca raíz harán más fácil la compra de tu vivienda nueva.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:url" content="https://www.lahaus.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="La Haus más que una inmobiliaria ¡Compra finca raíz a tu ritmo!">
+    <meta property="og:site_name" content="La Haus">
+    <meta property="og:description"
+        content="¿Buscas una inmobiliaria? Tenemos una buena noticia, somos mucho más. La tecnología y oferta de finca raíz harán más fácil la compra de tu vivienda nueva.">
+    <meta property="og:image" content="https://lahaus.imgix.net/static/default/default-share-social-media-v2.jpg">
+    <meta property="og:image_width" content="1200">
+    <meta property="og:image_height" content="630">
+    <meta property="og:locale" content="es-CO">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@LaHausCom">
+    <meta name="twitter:creator" content="@LaHausCom">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token"
+        content="9sRxG6Fy7KLKdrxM/t9GtqIacVLhsQd4yyvvLdlR012vR5T2YGEGedLKd7X3vUs1nlrqmIkhsuyWcUM/sOcETA==" />
+    <meta name="theme-color" content="#012D26">
+    <link rel="canonical" href="https://www.lahaus.com/" />
     <link rel="icon" type="image/png" href="./resources/imagenes/icon-haus.png">
     <link rel="stylesheet" href="./css/style.css">
     <!-- la Haus icons -->
     <link rel="stylesheet" href="https://use.fortawesome.com/kits/85c4cb2e/publications/117878/woff2.css" media="all">
-
 </head>
 
 <body>
     <header class="main-header">
 
         <input type="checkbox" id="botton-menu">
-        <!-- Es la etiqueta que mejora la accesibilidad al usuario por medio de los inputs -->
         <label class="icono-menu" for="botton-menu">
-            <img class="log-menu" src="./resources/imagenes/logo-lahaus.svg" alt="iconomenu">
+            <img class="log-menu" src="./resources/imagenes/iconomenu.png" alt="iconomenu">
         </label>
 
         <nav class="menu">
             <img class="logo-haus" src="./resources/imagenes/logo-lahaus.svg" alt="icon-haus">
 
-            <!-- dropdown explorar propiedades-->
+            <!-- dropdown explore properties-->
             <div class="dropdown-explore">
                 <button class="dropbtn-explore">Explora propiedades <i class="fa fa-chevron-down ml-2"></i></button>
                 <div class="dropdown-explore-content">
@@ -53,7 +73,7 @@
                 </div>
 
             </div>
-            <!-- dropdown como comprar-->
+            <!-- dropdown  how to buy -->
             <div class="dropdown-buy">
                 <button class="dropbtn-buy">Cómo comprar <i class="fa fa-chevron-down ml-2"></i></button>
                 <div class="dropdown-buy-content">
@@ -125,7 +145,7 @@
                 </div>
 
             </div>
-
+            <!--dropdown log-in  -->
             <div class="dropdown-log-in">
                 <button class="dropbtn-log-in">Entra a La Haus <i class="fa fa-chevron-down ml-2"></i></button>
                 <div class="dropdown-log-in-content">
@@ -140,42 +160,51 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Publish Free -->
             <button class="btn-pg"><a href="#">Publica Gratis</a></button>
             </div>
         </nav>
     </header>
-    <section class="search-location">
-        <a href="#"><i class="fas fa-map-marker-alt"></i>Proyecto Aima, Cartagena</a>
-        <h1>Hoy se compra casa nueva en LaHaus.</h1>
-        <form>
-            <ul>
-                <li> <input type="search" placeholder="Buscar por ciudad,zona o barrio"></li>
-                <li>
-                    <div class="dropdown-type">
-                        <button class="dropbtn-type">Tipo de propiedad</button>
-                        <div class="dropdown-type-content">
+    <main>
+        <!-- Banner and search-->
+        <section class="search-location">
+            <a class="link-search" href="#"><i class="fa fa-pin-location"></i>Proyecto Aima, Cartagena</a>
+            <h1 class="title-banner">Hoy se compra <br> casa nueva en LaHaus.</h1>
+            <form class="">
+                <ul class="container-search">
 
-                            <a href="#"> Proyecto de vivienda</a>
-                            <a href="#">Apartamentos</a>
-                            <a href="#">Casas</a>
-                        </div>
-
+                    <li class="search"><i class="fa fa-search cursor-pointer"></i><input class="search-place" type="search"
+                            placeholder="Buscar por ciudad,zona o barrio"></li>
+                    <li>
+                        <!--dropdown type of property  -->
                         <div class="dropdown-type">
-                            <button id="habs" class="dropbtn-type">Habitaciones</button>
+                            <button type="button" class="dropbtn-type">Tipo de propiedad</button>
                             <div class="dropdown-type-content">
-                                <div>
-                                    <button type="button" onclick="decrementCounter()">-</button>
+                                <a href="#"><i class="fa fa-apartment"></i> Proyecto de vivienda</a>
+                                <a href="#"><i class="fa fa-apartment"></i>Apartamentos</a>
+                                <a href="#"><i class="fa fa-home"></i> Casas</a>
+                            </div>
+                        </div>
+                        <!--dropdown rooms -->
+                        <div class="dropdown-room">
+                            <button type="button" id="habs" class="dropbtn-room">Habitaciones</button>
+                            <div class="dropdown-room-content">
+                                <div class="counter">
+                                    <p>Habitaciones</p>
+                                    <button class="btn-counter" type="button" onclick="decrementCounter()"><i class="fa fa-less-icon"></i></button>
                                     <h3 id="counter-label">0</h3>
-                                    <button type="button" onclick="incrementClick()">+</button>
+                                    <button class="btn-counter"type="button" onclick="incrementClick()"><i class="fa fa-add-icon"></i></button>
                                 </div>
                             </div>
-                </li>
-                <li><button>Buscar</button></li>
-            </ul>
-        </form>
-    </section>
-    <script src="./script.js"></script>
+                        </div>
+                    </li>
+                    <!-- botton search -->
+                    <li><button type="button" class="btn-search">Buscar</button></li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <script src="./js/counter.js"></script>
 </body>
 
 </html>
