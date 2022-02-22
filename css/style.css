@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: silka;
     src: url(./fonts/silka-regular-webfont.woff2);
@@ -28,28 +29,11 @@
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Menu*/
-/* Menu Mobile */
-.icono-menu {
-    padding-top: 30px;
-}
-
-header label {
-    display: none;
-    width: 100px;
-    padding: 10px;
-}
-
-header label:hover {
-    cursor: pointer;
-    font-weight: 500px;
-}
-
 /* Menu Desktop*/
 .logo-haus {
     width: 124px;
     height: 23px;
-    margin-right: 186px;
+    margin-right: 279px;
     margin-top: 14px;
     margin-left: 21px;
 }
@@ -65,7 +49,8 @@ header label:hover {
 .dropbtn-invest {
     background-color: var(--color-white);
     color: var(--color-primary);
-    padding: 10px;
+    padding: 16px 10px;
+    ;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -108,7 +93,7 @@ header label:hover {
 .dropdown-explore:hover .dropdown-explore-content {
     display: block;
     padding: 50px;
-    left: -419px;
+    left: -483px;
 }
 
 .dropdown-explore:hover .dropbtn-explore {
@@ -198,7 +183,7 @@ header label:hover {
 .dropdown-buy:hover .dropdown-buy-content {
     display: block;
     padding: 55px 117px;
-    left: -576px;
+    left: -696px;
 }
 
 .dropdown-buy:hover .dropbtn-buy {
@@ -259,7 +244,7 @@ header label:hover {
 .dropdown-invest:hover .dropdown-invest-content {
     display: block;
     padding: 55px 242px;
-    left: -702px;
+    left: -818px;
 }
 
 .dropdown-invest:hover .dropbtn-invest {
@@ -335,7 +320,7 @@ header label:hover {
 .dropbtn-log-in {
     background-color: var(--color-white);
     color: var(--color-primary);
-    padding: 10px 31px;
+    padding: 13px 31px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -391,6 +376,7 @@ header label:hover {
     margin: 10px;
     padding: 5px;
     width: 170px;
+    font-size: 1rem;
 }
 
 .img-btn-asr {
@@ -426,7 +412,7 @@ header label:hover {
 /* section search-location */
 .search-location {
     background-image: url(../resources/images/background-banner.jpg);
-    height: 490px;
+    height: 544px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20%;
@@ -456,7 +442,7 @@ header label:hover {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-
+    margin-top: 5px;
 }
 
 .container-search {
@@ -650,14 +636,19 @@ header label:hover {
 
 /* slider menu slider launches and where live */
 
-.menu-slider-lauches .no-scroll ,.where-live .no-scroll  {
+.menu-slider-lauches .no-scroll,
+.where-live .no-scroll {
     overflow: hidden;
 }
-.menu-slider-lauches .card-slider , .where-live .card-slider  {
+
+.menu-slider-lauches .card-slider,
+.where-live .card-slider {
     margin: auto;
     width: 100%;
 }
-.menu-slider-lauches .card , .where-live .card {
+
+.menu-slider-lauches .card,
+.where-live .card {
     display: flex;
     border: none;
     flex-direction: column;
@@ -668,14 +659,14 @@ header label:hover {
     position: relative;
     z-index: 1;
     box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--color-white);
     font-family: var(--font-family-base);
 }
 
 /* menu slider launches */
-.menu-slider-lauches .container{
+.menu-slider-lauches .container {
     padding: 2em;
     min-height: 100vh;
     display: flex;
@@ -684,17 +675,18 @@ header label:hover {
 .menu-slider-lauches .slick-slide {
     padding: 2em 0.5em;
 }
+
 .where-live.place-slider .slick-slide {
     padding: 2em 0em;
-  }
-
-.menu-slider-lauches .card{
-    padding: 2em;
-    height:380px;
 }
 
-.menu-slider-lauches .card::before{
-    background: linear-gradient(180deg,rgba(28,41,44,.74) 22.92%,rgba(28,41,44,0) 76.04%);
+.menu-slider-lauches .card {
+    padding: 2em;
+    height: 380px;
+}
+
+.menu-slider-lauches .card::before {
+    background: linear-gradient(180deg, rgba(28, 41, 44, .74) 22.92%, rgba(28, 41, 44, 0) 76.04%);
     content: "";
     height: 100%;
     left: 0;
@@ -704,21 +696,87 @@ header label:hover {
     width: 100%;
 }
 
-.menu-slider-lauches .card.one{
+.menu-slider-lauches .card.one {
     background-image: url(https://lahaus.imgix.net/uploads/real_estate_attachment/picture/7727181/luna_etapa_2_apartamento_nuevos_en_venta_en_chia_con_gimnasio_cover_9caeda3ef34374a44088.jpg?auto=format,compress&q=90&w=580&fit=clip);
+    background-size: 356px;
 }
 
-.menu-slider-lauches .card.two{
+.menu-slider-lauches .card.two {
     background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1303/2__1_.jpg?auto=compress%2Cenhance%2Cformat&q=60);
-    
+    background-size: 447px 299px;
 }
 
-.menu-slider-lauches .card.three{
+.menu-slider-lauches .card.three {
     background-image: url(https://lahaus.imgix.net/uploads/real_estate_attachment/picture/7825275/yolo_apartamentos_en_venta_en_chico_norte_de_1_2_hab_cover_69087375c995c63c0b4f.jpg?auto=format,compress&q=90&w=580&fit=clip);
+    background-size: 312px;
 }
-.menu-slider-lauches .card.four{
+
+.menu-slider-lauches .card.four {
     background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1104/be_102_53.jpg?auto=compress%2Cenhance%2Cformat&q=60);
 }
+
+.menu-slider-lauches .card.one-m {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/716/pte_inestable_-salon_de_fiestas__Grande_.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 356px;
+}
+
+.menu-slider-lauches .card.two-m {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/713/terrazzino_living_apartamentos_en_venta_en_loma_de_cumbres_de_1_2_hab_gallery_1e90d3df55bd1e1551fa.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 100% 54%;
+
+}
+
+.menu-slider-lauches .card.three-m {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1398/retirosalvaje.png?auto=compress%2Cenhance%2Cformat&q=60);
+}
+
+.menu-slider-lauches .card.four-m {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/714/solana_apartamento_nuevos_en_venta_en_amazonia_con_piscina_cover_e0f371cc86652c67b3ac_3_.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 100% 54%
+}
+
+.menu-slider-lauches .card.one-vc {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1299/PentHouse-2.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 100% 61%;
+}
+
+.menu-slider-lauches .card.two-vc {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1105/parques_de_pangola.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 100% 56%;
+
+}
+
+.menu-slider-lauches .card.three-vc {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/811/interior.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 100% 56%;
+}
+
+.menu-slider-lauches .card.four-vc {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/444/le_parc.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+}
+
+.menu-slider-lauches .card.one-c {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1365/ASD_211201_Inciti_Vive-Rio_General_Cam-Drone-2-Prev-1_Post.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 319px 235px;
+}
+
+.menu-slider-lauches .card.two-c {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/708/natura_city.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 356px;
+}
+
+.menu-slider-lauches .card.three-c {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/710/santa_marina.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 359px;
+}
+
+.menu-slider-lauches .card.four-c {
+    background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/705/emerawa.jpg?auto=compress%2Cenhance%2Cformat&q=60);
+    background-size: 359px;
+}
+
+
+
 
 .menu-slider-lauches .information-card {
     display: flex;
@@ -728,35 +786,43 @@ header label:hover {
 }
 
 .menu-slider-lauches .card-category {
-    color: rgba(62, 207, 175, 1);
+
     font-size: 0.8em;
     font-weight: 600;
     padding: 0.2em 0.5em 0.25em;
     position: relative;
-    bottom:194px;
+    bottom: 194px;
+}
+
+.menu-slider-lauches .card-category.available {
+    color: rgba(62, 207, 175, 1);
+}
+
+.card-category.launch {
+    color: #f8f08e
 }
 
 .menu-slider-lauches .card-title {
     position: relative;
     color: var(--color-white);
-    bottom:176px;
+    bottom: 176px;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.menu-slider-lauches .description-text{
+.menu-slider-lauches .description-text {
     position: relative;
     color: var(--color-white);
     bottom: 162px;
 }
 
-.menu-slider-lauches .card-price{
+.menu-slider-lauches .card-price {
     position: relative;
     bottom: 20px;
 }
 
 .menu-slider-lauches .card-price .card-price-text-title {
-    
+
     font-weight: 500;
     color: var(--color-primary);
     position: relative;
@@ -768,45 +834,50 @@ header label:hover {
     bottom: 9px;
 }
 
-.menu-slider-lauches .card-price .card-price-text-a{
+.menu-slider-lauches .card-price .card-price-text-a {
     text-decoration: none;
     color: var(--color-blue);
 }
+
 /* ______________________________________________________________ */
 /* Style the tab */
 .menu-slider-lauches .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    color: #f8f08e;
+
+    padding: 55px 17px 0px;
 }
 
 /* Style the buttons inside the tab */
 .menu-slider-lauches .tab button {
+    color: #f8f08e;
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 20px;
     transition: 0.3s;
     font-size: 17px;
+    border-bottom: 1px solid #f8f08e;
 }
 
 /* Change background color of buttons on hover */
 .menu-slider-lauches .tab button:hover {
-    background-color: #ddd;
+    font-weight: 600;
 }
 
 /* Create an active/current tablink class */
 .menu-slider-lauches .tab button.active {
-    background-color: #ccc;
+    font-weight: 600;
+    border-bottom: 3px solid #f8f08e;
 }
 
 /* Style the tab content */
 .menu-slider-lauches .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+
     border-top: none;
 }
 
@@ -897,10 +968,11 @@ section.it-possible.title-possible {
 /*container end  How we make it possible/*
 
 /* container log  in la haus plus */
-.login-plus{
+.login-plus {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
     align-items: center;
     align-content: center;
     background-color: #f8f8f8;
@@ -908,93 +980,37 @@ section.it-possible.title-possible {
     height: 41px;
     margin: 34px 150px;
     cursor: pointer;
-  }
+}
 
-  .title-login-plus{
-      font-family: var(--font-family-base);
-      
-  }
+.title-login-plus {
+    font-family: var(--font-family-base);
 
-  .title-login-plus span {
-      color: var(--color-blue);
-  }
-  .btn-login-plus{
+}
+
+.title-login-plus span {
+    color: var(--color-blue);
+}
+
+.btn-login-plus {
     padding: 15px 45px;
     background-color: var(--color-blue);
     border-radius: 10px;
     border: none;
     font-size: 1rem;
     font-weight: 600;
-  }
+}
 
-  .btn-login-plus a {
+.btn-login-plus a {
     color: var(--color-white);
     text-decoration: none;
-  }
-/* section launches */
+}
 
 /* section where live */
-.where-live .card.place {
-    padding: 0em;
-    height: auto;
-
-  }
-
-.where-live .container {
-    background: pink;
-    padding: 2em;
-    min-height: 50vh;
-    display: flex;
-  }
-
-.where-live .inner{
-    flex-grow: 2;
-    border: 5px solid white;
-    border-radius: 20px;
-}
-.where-live .grid-images {
-  display: flex;
-  flex-direction: row;
-}
-
-.where-live .grid-images>* {
-  text-align: center;
-  border: 5px solid white;
-  border-radius: 20px;
-  width: 23vw;
-  height: 300px;
-}
-
-.where-live .box1 {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.where-live .inner.one {
-    background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/proyectos.jpg?auto=compress,enhance,format&q=60);
-}
-.where-live .inner.two {
-    background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/apartamentos.jpg?auto=compress,enhance,format&q=60) ;
-}
-.where-live .inner.three {
-background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/casas.jpg?auto=compress,enhance,format&q=60);
-}
-.where-live .full{
-    height: 277px;
-    border-radius: 10px;
-    
-}
-.where-live .full.one {
-  background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/mde_poblado.jpg?auto=compress,enhance,format&amp;q=60);
-  background-size: cover;
-}
-/* ______________________________________________________________ */
 /* Style the tab */
 .where-live .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    margin: 2% 34%;
+
 }
 
 /* Style the buttons inside the tab */
@@ -1007,16 +1023,23 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    border: 1px solid #f8f08e;
+    border-radius: 40px;
+
+}
+
+.where-live .tab .tablinkslive.one {
+    margin-right: 20px;
 }
 
 /* Change background color of buttons on hover */
 .where-live .tab button:hover {
-    background-color: #ddd;
+    background-color: #f8f08e;
 }
 
 /* Create an active/current tablink class */
 .where-live .tab button.active {
-    background-color: #ccc;
+    background-color: #f8f08e;
 }
 
 /* Style the tab content */
@@ -1047,10 +1070,159 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     cursor: pointer;
 }
 
-.where-live .tabcontent{
+.where-live .tabcontent {
     display: block;
 }
-/* end section  launches */
+
+/* section cards properties*/
+.where-live .title-live {
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-weight: inherit;
+    font-size: 2rem;
+}
+
+.where-live .card.place {
+    padding: 0em;
+    height: auto;
+
+}
+
+.where-live .container {
+    padding: 2em;
+    min-height: 50vh;
+    display: flex;
+}
+
+.where-live .inner {
+    flex-grow: 2;
+    border: 5px solid var(--color-white);
+    border-radius: 20px;
+    font-family: var(--font-family-base);
+
+}
+
+.where-live .inner.p-one h3,
+.inner.p-two h3,
+.inner.p-three h3 {
+    position: relative;
+    top: 34px;
+    color: var(--color-white);
+    text-shadow: 0px 1px 1px black;
+
+}
+
+.where-live .grid-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.where-live .grid-images>* {
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 23vw;
+    height: 300px;
+}
+
+.where-live .box1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.where-live .full {
+    height: 277px;
+    border-radius: 10px;
+
+}
+
+.where-live .full .title-full {
+    position: relative;
+    top: 20px;
+    left: 37px;
+    color: var(--color-white);
+    text-shadow: 0px 1px 1px black;
+    text-align: start;
+}
+
+.where-live .full .text-full {
+    position: relative;
+    top: 20px;
+    right: 65px;
+    color: var(--color-white);
+    text-shadow: 0px 1px 1px black;
+    text-align: inherit;
+}
+
+.where-live .inner .title-inner {
+    position: relative;
+    top: 18px;
+    left: 43px;
+    color: var(--color-white);
+    margin: 2px;
+    text-align: start;
+    text-shadow: 0px 1px 1px black;
+}
+
+.where-live .inner .text-inner {
+    position: relative;
+    top: 22px;
+    left: 45px;
+    color: var(--color-white);
+    text-shadow: 0px 1px 1px black;
+    text-align: start;
+}
+
+.where-live .inner.p-one {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/proyectos.jpg?auto=compress,enhance,format&q=60);
+
+}
+
+.where-live .inner.p-two {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/apartamentos.jpg?auto=compress,enhance,format&q=60);
+}
+
+.where-live .inner.p-three {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/casas.jpg?auto=compress,enhance,format&q=60);
+}
+
+.where-live .full-sthree {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_carolina.jpg?auto=compress,enhance,format&amp;q=60);
+}
+
+.where-live .full.s-one {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/mde_poblado.jpg?auto=compress,enhance,format&amp;q=60);
+    background-size: cover;
+}
+
+.where-live .inner.s-two-one {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_barbara.jpg?auto=compress,enhance,format&amp;q=60);
+}
+
+.where-live .inner.s-two-two {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_cedritos.jpg?auto=compress,enhance,format&amp;q=60);
+}
+
+.where-live .inner.s-three-one {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_chia.jpg?auto=compress,enhance,format&amp;q=60);
+    background-position: right;
+    background-size: cover;
+}
+
+.where-live .inner.s-three-two {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_usaquen.jpg?auto=compress,enhance,format&amp;q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.where-live .inner.final {
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/bog_colina.jpg?auto=compress,enhance,format&amp;q=60);
+}
+
+/* End section where live */
 
 /* slider investment  */
 
@@ -1059,18 +1231,20 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     position: relative;
     margin: auto;
 }
+
 .text {
     font-size: 1rem;
     padding: 112px 119px 36px 177px;
     text-align: center;
     font-family: var(--font-family-base);
-    
+
 }
 
-.img-investment{
+.img-investment {
     position: relative;
     padding-bottom: 21px;
 }
+
 .img-investment.forbes {
     left: 443px;
     padding: 9px 10px;
@@ -1079,30 +1253,37 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
 .img-investment.bloomberg {
     left: 349px;
     padding: 9px 10px 10px;
-    
+
 }
 
 .img-investment.crunch {
     left: 435px;
     padding: 9px 10px 10px;
-    
+
 }
-.img-investment.crunch img{
+
+.img-investment.crunch img {
     width: 158px;
 }
-.img-investment.spring{
+
+.img-investment.spring {
     left: 373px;
     padding: 9px 10px 10px;
 }
+
 .img-investment.lr {
     left: 422px;
     padding: 9px 10px 10px;
 }
+
 .img-investment.lr img {
     width: 158px;
 }
 
-.prev,.next,.where-live .slick-prev ,.where-live .slick-next{
+.prev,
+.next,
+.where-live .slick-prev,
+.where-live .slick-next {
     cursor: pointer;
     position: absolute;
     top: 128px;
@@ -1115,28 +1296,35 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     color: #5b6866;
     height: 4.8rem;
 }
-.prev ,.where-live .slick-prev {
+
+.prev,
+.where-live .slick-prev {
     padding: 21px;
     border-radius: 50%;
     z-index: 1;
 }
-.where-live .slick-next::before,.where-live .slick-prev::before{
-   content: '';
+
+.where-live .slick-next::before,
+.where-live .slick-prev::before {
+    content: '';
 }
-.next ,.where-live .slick-next{
+
+.next,
+.where-live .slick-next {
     padding: 19px 31px;
     right: 0;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     border: 1px solid var(--color-blue);
     border-radius: 58px;
 }
 
-.btn-radio{
-    text-align:center
+.btn-radio {
+    text-align: center
 }
 
 .dot {
@@ -1150,8 +1338,9 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-    background-color:var(--color-blue);
+.active,
+.dot:hover {
+    background-color: var(--color-blue);
 }
 
 .fade {
@@ -1160,9 +1349,10 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 /* end slider investment  */
 /* container builders */
-.builders{
+.builders {
     background-color: #2574d7;
     background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/bk-allies-banner.png?auto=compress%2Cformat&q=60);
     background-position: 100% 100%;
@@ -1173,18 +1363,18 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     margin: 50px;
     padding-bottom: 50px;
     border-radius: 10px;
-  }
+}
 
 
-.title-builders{
+.title-builders {
     color: var(--color-white);
     font-size: 2rem;
     font-family: var(--font-family-base);
-    padding:40px;
- 
+    padding: 40px;
+
 }
 
-.text-builders{
+.text-builders {
     color: var(--color-white);
     font-size: 1rem;
     font-family: var(--font-family-base);
@@ -1192,6 +1382,7 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     bottom: 41px;
     left: 38px;
 }
+
 .btn-buiders {
     background-color: #f8f08e;
     position: relative;
@@ -1206,16 +1397,17 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
 .btn-buiders a {
     text-decoration: none;
     color: var(--color-primary);
-    font-size: 1rem ;
+    font-size: 1rem;
 }
+
 /* End container builders */
 /* container tools and help */
-.tools{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        font-family: var(--font-family-base);
+.tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-family-base);
 }
 
 .tools h1 {
@@ -1223,11 +1415,12 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     font-weight: 500;
 }
 
-.tools .text-one  {
+.tools .text-one {
     font-size: 1.3rem;
     color: var(--color-primary);
 }
-.cards-tools{
+
+.cards-tools {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1249,11 +1442,11 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     border: none;
     border-radius: 12px;
     padding: 1rem;
-    overflow:hidden;
-    
+    overflow: hidden;
+
 }
 
-.card-tools.one{
+.card-tools.one {
     background-color: #2574d7;
     background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/rooftop_1.png?auto=compress,enhance,format&q=50);
     background-attachment: unset;
@@ -1261,13 +1454,14 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     background-repeat: no-repeat;
 }
 
-.card-tools.two{
+.card-tools.two {
     background-color: #00d1b0;
     background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/calculator.png?auto=compress,enhance,format&q=50);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .card-tools.three {
     background-color: #ffe7b6;
     background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/hansjorg-keller-hwTZ7_NUSZ8-unsplash_1.png?auto=compress,enhance,format&q=50);
@@ -1276,13 +1470,14 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     background-size: inherit;
 }
 
-.card-tools.four{
+.card-tools.four {
     background-color: #c0c7ff;
     background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/pintura_1.png?auto=compress,enhance,format&q=50);
     background-repeat: no-repeat;
     background-position: bottom;
 }
-.title-tools{
+
+.title-tools {
     font-family: var(--font-family-base);
     font-size: 1.6rem;
     font-weight: 400;
@@ -1290,38 +1485,40 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     top: 23px;
     padding: 0 2rem;
 }
+
 .title-tools.two {
     width: 276px;
     right: 27px;
 }
+
 .card-transform {
     position: relative;
     top: 328px;
     transition: top 0.2s;
-    
+
 }
 
 .card-tools:hover .card-transform {
-    top:75px;
-    
+    top: 75px;
+
 }
 
 /* End container tools and help */
 /* Container best search  */
-.best-search{
+.best-search {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.text-best{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: flex-end;
-align-content: center;
-margin-left: 140px;
+.text-best {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    margin-left: 140px;
 }
 
 .text-best h1 {
@@ -1335,19 +1532,290 @@ margin-left: 140px;
     margin-bottom: 34px;
 }
 
-.btn-best{
+.btn-best {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.btn-g{
-    margin-right:15px;
+
+.btn-g {
+    margin-right: 15px;
 }
-.btn-g ,.btn-a {
+
+.btn-g,
+.btn-a {
     border: none;
     background-color: var(--color-white);
-    
+
 }
 
 
+/* content read more */
+.content-read-more {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 1440px;
+    padding: 6% 7% 5% 8%;
+}
 
+
+.content-read-more ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.title-read-more {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.content-read-more a {
+    text-decoration: none;
+    color: #5b6866;
+}
+
+.content-read-more a:hover {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Mostrar mas';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Mostrar menos';
+}
+
+.read-more-trigger,
+.read-more-trigger-two {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 0 .5em;
+    color: blue;
+    font-size: 1rem;
+    line-height: 2;
+
+}
+
+/* footer */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 7%;
+    background-color: #00d1b0;
+    font-family: var(--font-family-base);
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    border-bottom: 1px solid black;
+    ;
+}
+
+.footer-img {
+    margin-bottom: 8%;
+}
+
+.logo-footer a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.citys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4%;
+}
+
+.title-city {
+    font-weight: 600;
+    padding-bottom: 11%;
+    font-size: 1rem;
+}
+
+.text-city {
+    color: var(--color-primary);
+    padding-bottom: 11%;
+    font-size: 0.9rem;
+}
+
+.citys a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.social-links .fa-2x {
+    padding: 2%;
+    color: var(--color-primary);
+}
+
+.copy-r {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.copy-r .border-li {
+    border-right: 1px solid var(--color-primary);
+    padding-right: 4px;
+}
+
+.copy-r a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.endeavor {
+    padding: 1%;
+}
+
+/* Menu*/
+/* Menu Mobile */
+.icono-menu {
+    padding-top: 30px;
+}
+
+header label {
+    display: none;
+    width: 100px;
+    padding: 10px;
+}
+
+header label:hover {
+    cursor: pointer;
+    font-weight: 500px;
+}
+
+@media (max-width:990px) {
+
+    .container-search,
+    .cards-it-possible,
+    .best-search {
+        flex-direction: column;
+    }
+
+    .container-search,
+    .launches,
+    .login-plus {
+        margin: 0px;
+    }
+
+    .search-location {
+        height: 94vh;
+    }
+
+    .dropdown-type,
+    .dropdown-room {
+        position: relative;
+        display: block;
+    }
+
+    .launches {
+        display: block;
+    }
+
+    .text-launches,
+    .menu-slider-lauches {
+        width: 100%;
+    }
+
+    section.it-possible {
+        height: 750px;
+    }
+
+    .login-plus {
+        justify-content: center;
+        height: 500px;
+
+    }
+
+    section.login-plus>* {
+        margin: 3% 2%;
+        text-align: center;
+    }
+
+    .img-best-file {
+        width: 100%;
+    }
+
+    .text-best {
+        margin-left: 0px;
+    }
+
+    .where-live .grid-images>* {
+        width: 84vw;
+    }
+
+    .img-investment {
+        left: 0px !important;
+        padding: 0px !important;
+    }
+
+    .img-investment>img {
+        max-width: 50% !important;
+        margin-left: 38%;
+    }
+
+    .img-investment.bloomberg>img,
+    .img-investment.spring>img {
+        margin-left: 26%;
+    }
+
+    .img-investment.crunch>img {
+        margin-left: 29%;
+    }
+
+    .img-investment.lr img {
+        width: 80px;
+    }
+
+    .text {
+        padding: 107px 68px;
+    }
+
+    .logo-footer,
+    .citys,
+    .copy-r {
+        flex-direction: column;
+    }
+
+    .copy-r>* {
+        margin: 3% 2%;
+    }
+
+    .copy-r .border-li {
+        border-right: none;
+
+    }
+}

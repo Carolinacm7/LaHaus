@@ -171,47 +171,49 @@
             </div>
         </nav>
     </header>
-    <main>
-        <!-- Banner and search-->
-        <section class="search-location">
-            <a class="link-search" href="#"><i class="fa fa-pin-location"></i>Proyecto Aima, Cartagena</a>
-            <h1 class="title-banner">Hoy se compra <br> casa nueva en LaHaus.</h1>
-            <form class="">
-                <ul class="container-search">
 
-                    <li class="search"><i class="fa fa-search cursor-pointer"></i><input class="search-place"
-                            type="search" placeholder="Buscar por ciudad,zona o barrio"></li>
-                    <li>
-                        <!--dropdown type of property  -->
-                        <article class="dropdown-type">
-                            <button type="button" class="dropbtn-type">Tipo de propiedad</button>
-                            <div class="dropdown-type-content">
-                                <a href="#"><i class="fa fa-apartment"></i> Proyecto de vivienda</a>
-                                <a href="#"><i class="fa fa-apartment"></i>Apartamentos</a>
-                                <a href="#"><i class="fa fa-home"></i> Casas</a>
+    <!-- Banner and search-->
+    <section class="search-location">
+        <a class="link-search" href="#"><i class="fa fa-pin-location"></i>Proyecto Aima, Cartagena</a>
+        <h1 class="title-banner">Hoy se compra <br> casa nueva en LaHaus.</h1>
+        <form class="">
+            <ul class="container-search">
+
+                <li class="search"><i class="fa fa-search cursor-pointer"></i><input class="search-place" type="search"
+                        placeholder=" Buscar por ciudad,zona o barrio"></li>
+                <li>
+                    <!--dropdown type of property  -->
+                    <article class="dropdown-type">
+                        <button type="button" class="dropbtn-type">Tipo de propiedad</button>
+                        <div class="dropdown-type-content">
+                            <a href="#"><i class="fa fa-apartment"></i> Proyecto de vivienda</a>
+                            <a href="#"><i class="fa fa-apartment"></i>Apartamentos</a>
+                            <a href="#"><i class="fa fa-home"></i> Casas</a>
+                        </div>
+                    </article>
+                    <!--dropdown rooms -->
+                    <article class="dropdown-room">
+                        <button type="button" id="habs" class="dropbtn-room">Habitaciones</button>
+                        <div class="dropdown-room-content">
+                            <div class="counter">
+                                <p>Habitaciones</p>
+                                <button class="btn-counter" type="button" onclick="decrementCounter()"><i
+                                        class="fa fa-less-icon"></i></button>
+                                <h3 id="counter-label">0</h3>
+                                <button class="btn-counter" type="button" onclick="incrementClick()"><i
+                                        class="fa fa-add-icon"></i></button>
                             </div>
-                        </article>
-                        <!--dropdown rooms -->
-                        <article class="dropdown-room">
-                            <button type="button" id="habs" class="dropbtn-room">Habitaciones</button>
-                            <div class="dropdown-room-content">
-                                <div class="counter">
-                                    <p>Habitaciones</p>
-                                    <button class="btn-counter" type="button" onclick="decrementCounter()"><i
-                                            class="fa fa-less-icon"></i></button>
-                                    <h3 id="counter-label">0</h3>
-                                    <button class="btn-counter" type="button" onclick="incrementClick()"><i
-                                            class="fa fa-add-icon"></i></button>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <!-- botton search -->
-                    <li><button type="button" class="btn-search">Buscar</button></li>
-                </ul>
-            </form>
-        </section>
-        <!-- End banner and search-->
+                        </div>
+                    </article>
+                </li>
+                <!-- botton search -->
+                <li><button type="button" class="btn-search">Buscar</button></li>
+            </ul>
+        </form>
+    </section>
+    <!-- End banner and search-->
+
+    <main>
         <!-- section launches -->
         <section class="launches-lahaus">
             <div class="launches">
@@ -240,7 +242,7 @@
                                 <div class="card-slider">
                                     <div class="card-wrapper">
                                         <article class="card one">
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
                                             <h3 class="card-title">Bogota</h3>
@@ -257,7 +259,7 @@
                                     <div class="card-wrapper">
                                         <article class="card two">
 
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
                                             <h3 class="card-title">Serendapia Deluxe</h3>
@@ -272,7 +274,7 @@
                                     </div>
                                     <div class="card-wrapper">
                                         <article class="card three">
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
                                             <h3 class="card-title">Yolo</h3>
@@ -287,7 +289,7 @@
                                     </div>
                                     <div class="card-wrapper">
                                         <article class="card four">
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
                                             <h3 class="card-title">BE 102-53</h3>
@@ -312,15 +314,15 @@
                             <div class="container">
                                 <div class="card-slider">
                                     <div class="card-wrapper">
-                                        <article class="card one">
-                                            <div class="card-category">
+                                        <article class="card one-m">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Medellin </h3>
-                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <h3 class="card-title">La Cumbre </h3>
+                                            <p class="description-text">Pan de azúcar,sabaneta</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $330.6 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 64 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -328,46 +330,46 @@
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card two">
+                                        <article class="card two-m">
 
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Serendapia Deluxe</h3>
-                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <h3 class="card-title">Terrazino Living</h3>
+                                            <p class="description-text">zuñiga, Envigado</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $404.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 42 m² · 1 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card three">
-                                            <div class="card-category">
+                                        <article class="card three-m">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Yolo</h3>
-                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <h3 class="card-title">Retiro Silvestre</h3>
+                                            <p class="description-text">Casco urbano,El Retiro</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $508.6 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 66 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card four">
+                                        <article class="card four-m dis">
                                             <div class="card-category">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">BE 102-53</h3>
-                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <h3 class="card-title">Solana (Vis)</h3>
+                                            <p class="description-text">Amazonía, Bello</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $169.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 50 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -385,15 +387,15 @@
                             <div class="container">
                                 <div class="card-slider">
                                     <div class="card-wrapper">
-                                        <article class="card one">
-                                            <div class="card-category">
+                                        <article class="card one-vc">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Cauca (Vis)</h3>
-                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <h3 class="card-title">ALTEZZA-Cerritos Living</h3>
+                                            <p class="description-text">Cerritos,Pereira </p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $597.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 77 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -401,46 +403,46 @@
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card two">
+                                        <article class="card two-vc">
 
-                                            <div class="card-category">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Serendapia Deluxe</h3>
+                                            <h3 class="card-title">Parque de Pangola</h3>
                                             <p class="description-text">Chapinero Alto, Bogotá</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $159.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 55 m² · 2 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card three">
-                                            <div class="card-category">
+                                        <article class="card three-vc">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Yolo</h3>
-                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <h3 class="card-title">Habitare Cristales</h3>
+                                            <p class="description-text">Cristales,Cali</p>
                                             <div class="card-price">
                                                 <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <p class="card-price-text-p">Desde Desde 32 m² · 1 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card four">
-                                            <div class="card-category">
+                                        <article class="card four-vc">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">BE 102-53</h3>
-                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <h3 class="card-title">Le Parc Bochalema</h3>
+                                            <p class="description-text">Bochalema,Cali</p>
                                             <div class="card-price">
                                                 <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <p class="card-price-text-p">Desde Desde 64 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -458,15 +460,15 @@
                             <div class="container">
                                 <div class="card-slider">
                                     <div class="card-wrapper">
-                                        <article class="card one">
-                                            <div class="card-category">
+                                        <article class="card one-c">
+                                            <div class="card-category available">
                                                 Disponible
                                             </div>
-                                            <h3 class="card-title">Caribe</h3>
-                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <h3 class="card-title">Vive Río</h3>
+                                            <p class="description-text">Gran Malecón, Barranquilla </p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $263.8 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 36 m² · 1 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -474,46 +476,46 @@
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card two">
+                                        <article class="card two-c">
 
-                                            <div class="card-category">
-                                                Disponible
+                                            <div class="card-category launch">
+                                                Lanzamiento 16 Diciembre
                                             </div>
-                                            <h3 class="card-title">Serendapia Deluxe</h3>
-                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <h3 class="card-title">Natura City</h3>
+                                            <p class="description-text">Bella Vista,Santa Marta</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $323.3 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 76 m² · 2 Hab · 2 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card three">
-                                            <div class="card-category">
-                                                Disponible
+                                        <article class="card three-c">
+                                            <div class="card-category launch">
+                                                Lanzamiento 27 Diciembre
                                             </div>
-                                            <h3 class="card-title">Yolo</h3>
-                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <h3 class="card-title">Santa Marina</h3>
+                                            <p class="description-text">Don Jaca,Santa Marta</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $120.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 24 m² · 1 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
                                         </article>
                                     </div>
                                     <div class="card-wrapper">
-                                        <article class="card four">
-                                            <div class="card-category">
-                                                Disponible
+                                        <article class="card four-c">
+                                            <div class="card-category launch">
+                                                Lanzamiento 20 Diciembre
                                             </div>
-                                            <h3 class="card-title">BE 102-53</h3>
-                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <h3 class="card-title">Emerawa</h3>
+                                            <p class="description-text">Pozos Colorados, Santa Marta</p>
                                             <div class="card-price">
-                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
-                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <h3 class="card-price-text-title">Desde $252.6 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 40 m² · 1 Hab · 1 bañ</p>
                                                 <a class="card-price-text-a" href="#">Ver proyecto <i
                                                         class="fa fa-arrow-right-light"></i></a>
                                             </div>
@@ -639,7 +641,7 @@
         <!-- best search -->
         <section class="best-search">
             <article class="img-best">
-                <img src="./resources/images/best-search.jpg" alt="">
+                <img class="img-best-file" src="./resources/images/best-search.jpg" alt="">
             </article>
             <article class="text-best">
                 <h1>La mejor búsqueda de vivienda a la mano</h1>
@@ -660,9 +662,10 @@
 
 
         <section class="where-live">
+            <h1 class="title-live">¿Dónde quieres vivir?</h1>
             <div class="place-slider">
                 <div class="tab">
-                    <button class="tablinkslive" onclick="City(event, 'one')" id="one-live">Bogotá y
+                    <button class="tablinkslive one" onclick="City(event, 'one')" id="one-live">Bogotá y
                         alrededores</button>
                     <button class="tablinkslive" onclick="City(event, 'two')" id="two-live">Medellín
                         y
@@ -678,20 +681,20 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner one">
+                                                    <div class="inner p-one">
                                                         <h3>bogota</h3>
                                                     </div>
-                                                    <div class="inner two">
+                                                    <div class="inner p-two">
                                                         <h3>Apartamentos</h3>
                                                     </div>
-                                                    <div class="inner three">
+                                                    <div class="inner p-three">
                                                         <h3>Casas</h3>
                                                     </div>
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full one">
-                                                        <h3>El poblado</h3>
-                                                        <p>Apartamentos</p>
+                                                    <div class="full s-one">
+                                                        <h3 class="title-full">Chicó</h3>
+                                                        <p class="text-full">Apartamentos</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -701,12 +704,22 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner stwo">1</div>
-                                                    <div class="inner stwo">2</div>
+                                                    <div class="inner s-two-one ">
+                                                        <h3 class="title-inner">Santa Barbara</h3>
+                                                        <p class="text-inner">Apartamentos</p>
+                                                    </div>
+
+                                                    <div class="inner s-two-two ">
+                                                        <h3 class="title-inner">Cedritos</h3>
+                                                        <p class="text-inner">Apartamentos</p>
+                                                    </div>
 
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full">4</div>
+                                                    <div class="full full-sthree">
+                                                        <h3 class="title-full">La Carolina</h3>
+                                                        <p class="text-full">Apartamentos</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </article>
@@ -715,12 +728,21 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner">1</div>
-                                                    <div class="inner">2</div>
-                                                    <div class="inner">3</div>
+                                                    <div class="inner  s-three-one ">
+                                                        <h3 class="title-inner">Chía</h3>
+                                                        <p class="text-inner ">Casas</p>
+                                                    </div>
+                                                    <div class="inner s-three-two">
+                                                        <h3 class="title-inner">Usaquen</h3>
+                                                        <p class="text-inner ">Apartamentos</p>
+                                                    </div>
+
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full">4</div>
+                                                    <div class="full final">
+                                                        <h3 class="title-full">La Carolina</h3>
+                                                        <p class="text-full">Apartamentos</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </article>
@@ -740,20 +762,20 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner one">
-                                                        <h3> medellin </h3>
+                                                    <div class="inner p-one">
+                                                        <h3>bogota</h3>
                                                     </div>
-                                                    <div class="inner two">
+                                                    <div class="inner p-two">
                                                         <h3>Apartamentos</h3>
                                                     </div>
-                                                    <div class="inner three">
+                                                    <div class="inner p-three">
                                                         <h3>Casas</h3>
                                                     </div>
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full one">
-                                                        <h3>El poblado</h3>
-                                                        <p>Apartamentos</p>
+                                                    <div class="full s-one">
+                                                        <h3 class="title-full">Chicó</h3>
+                                                        <p class="text-full">Apartamentos</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -763,12 +785,22 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner stwo">1</div>
-                                                    <div class="inner stwo">2</div>
+                                                    <div class="inner s-two-one ">
+                                                        <h3 class="title-inner">Santa Barbara</h3>
+                                                        <p class="text-inner">Apartamentos</p>
+                                                    </div>
+
+                                                    <div class="inner s-two-two ">
+                                                        <h3 class="title-inner">Cedritos</h3>
+                                                        <p class="text-inner">Apartamentos</p>
+                                                    </div>
 
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full">4</div>
+                                                    <div class="full full-sthree">
+                                                        <h3 class="title-full">La Carolina</h3>
+                                                        <p class="text-full">Apartamentos</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </article>
@@ -777,12 +809,21 @@
                                         <article class="card place">
                                             <div class="grid-images">
                                                 <div class="box1">
-                                                    <div class="inner">1</div>
-                                                    <div class="inner">2</div>
-                                                    <div class="inner">3</div>
+                                                    <div class="inner  s-three-one ">
+                                                        <h3 class="title-inner">Chía</h3>
+                                                        <p class="text-inner ">Casas</p>
+                                                    </div>
+                                                    <div class="inner s-three-two">
+                                                        <h3 class="title-inner">Usaquen</h3>
+                                                        <p class="text-inner ">Apartamentos</p>
+                                                    </div>
+
                                                 </div>
                                                 <div class="box2">
-                                                    <div class="full">4</div>
+                                                    <div class="full final">
+                                                        <h3 class="title-full">La Carolina</h3>
+                                                        <p class="text-full">Apartamentos</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </article>
@@ -796,7 +837,7 @@
         </section>
 
 
-      
+
         <!-- End where do you wanna live?  -->
         <!-- slider investment   -->
         <section class="investment">
@@ -891,10 +932,231 @@
             <button class="btn-buiders"><a href="#">Quiero unirme a Exclusives</a></button>
         </section>
         <!-- End container Builders -->
+        <!--  Housing projects -->
+        <section class="content-read-more">
+            <div class="list1">
+                <input type="checkbox" class="read-more-state" id="post-1" />
+                <ul class="read-more-wrap">
+                    <li>
+                        <h2 title-read-more>Proyectos de vivienda</h2>
+                    </li>
+                    <li><a href="#">Apartamentos en venta en Bogotá</a></li>
+                    <li><a href="#">Apartamentos en venta en Medellín</a></li>
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Sabaneta </a> </li>
 
-        <!-- ----------------------------------------------------- -->
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Colina Campestre </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Chapinero </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Envigado </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Chia </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Mosquera </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Fontibon </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Suba </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Zipaquira </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Rionegro </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Todos los proyectos de vivienda </a> </li>
+
+                </ul>
+                <label for="post-1" class="read-more-trigger"></label>
+            </div>
+
+            <div class="list2">
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                <ul class="read-more-wrap">
+                    <li>
+                        <h2 title-read-more>Apartamentos</h2>
+                    </li>
+                    <li><a href="#">Apartamentos en venta en Bogotá</a></li>
+                    <li><a href="#">Apartamentos en venta en Medellín</a></li>
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Sabaneta </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Colina Campestre </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Chapinero </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Chapinero</a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Suba</a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Suba </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Ciudad Salitre </a> </li>
+
+                    <li class="read-more-target"><a href="#">Apartamentos en venta Castilla </a> </li>
+
+                    <li class="read-more-target"><a href="#">Apartamentos en venta Chia </a> </li>
+
+                    <li class="read-more-target"><a href="#">Apartamentos en venta Mosquera </a> </li>
+
+                    <li class="read-more-target"><a href="#">Apartamentos en venta en El Poblado</a> </li>
+
+                </ul>
+                <label for="post-2" class="read-more-trigger"></label>
+            </div>
+
+            <div class="list3">
+                <input type="checkbox" class="read-more-state" id="post-3" />
+                <ul class="read-more-wrap">
+                    <li>
+                        <h2 title-read-more>Búsquedas populares</h2>
+                    </li>
+                    <li><a href="#">Apartamentos subsidio no VIS Bogotá</a></li>
+                    <li><a href="#">Apartamentos subsidio no VIS Medellín</a></li>
+                    <li class="read-more-target"><a href="#"> Apartaestudios en venta en Bogotá </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartaestudios en venta en Medellín </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Apartamentos en venta Chapinero </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Envigado </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Chia </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Mosquera </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Fontibon </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Suba </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Zipaquira </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Proyectos de vivienda en Rionegro </a> </li>
+
+                    <li class="read-more-target"><a href="#"> Todos los proyectos de vivienda </a> </li>
+
+                </ul>
+                <label for="post-3" class="read-more-trigger"></label>
+            </div>
 
 
+            <div class="list4">
+                <input type="checkbox" class="read-more-state" id="post-4" />
+                <ul class="read-more-wrap">
+                    <li>
+                        <h2 title-read-more>Explora La Haus</h2>
+                    </li>
+                    <li><a href="#">La Haus Exclusives</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="read-more-target"><a href="#">Guía de compra de vivienda </a> </li>
+
+                    <li class="read-more-target"><a href="#">Calcula el pago de tu vivienda </a> </li>
+
+                </ul>
+                <label for="post-4" class="read-more-trigger"></label>
+            </div>
+        </section>
+        <!-- End housing projects -->
+        <footer>
+            <div class="logo-footer">
+                <div class="logo-footer-img">
+                    <img class="footer-img"
+                        src="https://lahaus.imgix.net/static/branding/logo-lahaus-icon-white.svg?auto=compress,format&amp;dpr=2"
+                        alt="La Haus">
+                </div>
+                <div class="haus-colombia">
+                    <a href="#">
+                        <span>Estás en La Haus Colombia</span>
+                        <i class="fa fa-arrow-right-light ml-lh-8"></i>
+                    </a>
+                </div>
+                </section>
+
+            </div>
+
+            <div class="citys">
+                <div class="city-Bogota">
+                    <p class="title-city">Bogotá</p>
+                    <p class="text-city">Torre 97 · Piso 7</p>
+                    <p class="text-city">Carrera 16 # 97 - 46</p>
+                    <p class="text-city">
+                        <a href="https://api.whatsapp.com/send/?phone=5715807110&amp;text=%F0%9F%8F%A0%20%F0%9F%A7%AD%20%F0%9F%92%A1%0A*Por%20favor%20no%20borres%20este%20mensaje*%0A%C2%A1Hola%21%20Estoy%20considerando%20comprar%20casa%20y%20como%20es%20una%20de%20las%20decisiones%20m%C3%A1s%20importantes%20de%20la%20vida%2C%20me%20gustar%C3%ADa%20recibir%20asistencia%20personalizada%20de%20La%20Haus%20y%20revisar%20algunas%20opciones.%0ACOD_BUSQ%3A63e1eab8-9494-494e-9797-baf06d4a2f70%0A
+            AID: 03b2aaa4-2002-45d3-a0bd-b89333387c6f%0A%F0%9F%92%A1%20%F0%9F%A7%AD%20%F0%9F%8F%A0" target="_blank"
+                            rel="noopener noreferrer nofollow" class="seg-footer-whatsapp-link">
+                            <i class="fa fa-whatsapp mr-3" title="Bogotá WhatsApp" aria-hidden="true">
+                            </i><span class="sr-only">Bogotá WhatsApp</span>+57 1580 7110
+                        </a>
+                    </p>
+                </div>
+                <div class="city-medellin">
+                    <p class="title-city">Medellín</p>
+                    <p class="text-city">35 Palms Business Tower · Piso 4</p>
+                    <p class="text-city">Carrera 35 # 15b - 143</p>
+                    <p class="text-city">
+                        <a href="https://api.whatsapp.com/send/?phone=5745906448&amp;text=%F0%9F%8F%A0%20%F0%9F%A7%AD%20%F0%9F%92%A1%0A*Por%20favor%20no%20borres%20este%20mensaje*%0A%C2%A1Hola%21%20Estoy%20considerando%20comprar%20casa%20y%20como%20es%20una%20de%20las%20decisiones%20m%C3%A1s%20importantes%20de%20la%20vida%2C%20me%20gustar%C3%ADa%20recibir%20asistencia%20personalizada%20de%20La%20Haus%20y%20revisar%20algunas%20opciones.%0ACOD_BUSQ%3A63e1eab8-9494-494e-9797-baf06d4a2f70%0A
+            AID: 03b2aaa4-2002-45d3-a0bd-b89333387c6f%0A%F0%9F%92%A1%20%F0%9F%A7%AD%20%F0%9F%8F%A0" target="_blank"
+                            rel="noopener noreferrer nofollow" class="seg-footer-whatsapp-link">
+                            <i class="fa fa-whatsapp mr-3" title="Medellin WhatsApp" aria-hidden="true">
+                            </i><span class="sr-only">Medellin WhatsApp</span>+57 4590 6448
+                        </a>
+                    </p>
+                </div>
+                <div class="city-cali">
+                    <p class="title-city">Cali</p>
+                    <p class="text-city">Unicentro Torre B · Piso 6</p>
+                    <p class="text-city">Cra. 100 # 5 - 169</p>
+                    <p class="text-city">
+                        <a href="https://api.whatsapp.com/send/?phone=5715806820&amp;text=%F0%9F%8F%A0%20%F0%9F%A7%AD%20%F0%9F%92%A1%0A*Por%20favor%20no%20borres%20este%20mensaje*%0A%C2%A1Hola%21%20Estoy%20considerando%20comprar%20casa%20y%20como%20es%20una%20de%20las%20decisiones%20m%C3%A1s%20importantes%20de%20la%20vida%2C%20me%20gustar%C3%ADa%20recibir%20asistencia%20personalizada%20de%20La%20Haus%20y%20revisar%20algunas%20opciones.%0ACOD_BUSQ%3A63e1eab8-9494-494e-9797-baf06d4a2f70%0A
+            AID: 03b2aaa4-2002-45d3-a0bd-b89333387c6f%0A%F0%9F%92%A1%20%F0%9F%A7%AD%20%F0%9F%8F%A0" target="_blank"
+                            rel="noopener noreferrer nofollow" class="seg-footer-whatsapp-link">
+                            <i class="fa fa-whatsapp mr-3" title="Cali WhatsApp" aria-hidden="true">
+                            </i><span class="sr-only">Cali WhatsApp</span>+57 1580 6820
+                        </a>
+                    </p>
+                </div>
+                <div class="city-cartagena">
+                    <p class="title-city">Barranquilla · Cartagena · Santa Marta</p>
+                    <p class="text-city">LYD House 98</p>
+                    <p class="text-city">Cra 58 # 96 - 187</p>
+                    <p class="text-city">
+                        <a href="https://api.whatsapp.com/send/?phone=5753225444&amp;text=%F0%9F%8F%A0%20%F0%9F%A7%AD%20%F0%9F%92%A1%0A*Por%20favor%20no%20borres%20este%20mensaje*%0A%C2%A1Hola%21%20Estoy%20considerando%20comprar%20casa%20y%20como%20es%20una%20de%20las%20decisiones%20m%C3%A1s%20importantes%20de%20la%20vida%2C%20me%20gustar%C3%ADa%20recibir%20asistencia%20personalizada%20de%20La%20Haus%20y%20revisar%20algunas%20opciones.%0ACOD_BUSQ%3A63e1eab8-9494-494e-9797-baf06d4a2f70%0A
+            AID: 03b2aaa4-2002-45d3-a0bd-b89333387c6f%0A%F0%9F%92%A1%20%F0%9F%A7%AD%20%F0%9F%8F%A0" target="_blank"
+                            rel="noopener noreferrer nofollow" class="seg-footer-whatsapp-link">
+                            <i class="fa fa-whatsapp mr-3" title="Caribe WhatsApp" aria-hidden="true">
+                            </i><span class="sr-only">Caribe WhatsApp</span>+57 5322 5444
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#">
+                    <i class="fa fa-twitter fa-2x mr-10 md:mr-20" title="twitter La Haus" aria-hidden="true">
+                    </i><span class="sr-only">twitter La Haus</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x mr-10 md:mr-20" title="Facebook La Haus" aria-hidden="true">
+                    </i><span class="sr-only">Facebook La Haus</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-instagram fa-2x mr-10 md:mr-20" title="Instagram La Haus" aria-hidden="true">
+                    </i><span class="sr-only">Instagram La Haus</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-social-linkedin fa-2x mr-10 md:mr-20" title="linkedin La Haus" aria-hidden="true">
+                    </i><span class="sr-only">linkedin La Haus</span>
+                </a>
+            </div>
+            <div class="copy-r">
+                <a class="border-li" href="#"> 2022 La Haus·comunidad@lahaus.com·Términos y Condiciones·Políticas de
+                    Tratamiento de Datos·Política de Cookies·Quiénes somos·Trabaja con nosotros·Mapa del sitio·La Haus
+                    México</a>
+                <div class="endeavor">
+                    <p>Hacemos parte de:</p>
+                    <img src="https://lahaus.imgix.net/static/lh-landing-v2/endeavor-logo.svg?auto=compress,format&dpr=2"
+                        alt="logo endeavor">
+                </div>
+        </footer>
 
     </main>
     <script src="./js/counter.js"></script>
@@ -904,5 +1166,5 @@
     <script src="./js/tabs-launches.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/slider-investment.js"></script>
-   <script src="./js/tabs-live.js"></script> 
+    <script src="./js/tabs-live.js"></script>
 </body>
