@@ -772,8 +772,67 @@ header label:hover {
     text-decoration: none;
     color: var(--color-blue);
 }
+/* ______________________________________________________________ */
+/* Style the tab */
+.menu-slider-lauches .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
 
+/* Style the buttons inside the tab */
+.menu-slider-lauches .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.menu-slider-lauches .tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.menu-slider-lauches .tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.menu-slider-lauches .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.menu-slider-lauches .MenuList li {
+    border-left: 1px solid gray;
+    padding: 20px 15px 20px 15px;
+    flex: 1;
+}
+
+.menu-slider-lauches .MenuList li a {
+    color: #fff;
+}
+
+.menu-slider-lauches .MenuList li:first-child {
+    border-left: 0;
+    border-bottom: 5px solid red;
+}
+
+.menu-slider-lauches .MenuList li:hover {
+    border-bottom: 5px solid red;
+    cursor: pointer;
+}
+
+.menu-slider-lauches .tabcontent {
+    display: block;
+}
 
 /* end section  launches */
 
@@ -930,6 +989,68 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
   background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/mde_poblado.jpg?auto=compress,enhance,format&amp;q=60);
   background-size: cover;
 }
+/* ______________________________________________________________ */
+/* Style the tab */
+.where-live .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.where-live .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.where-live .tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.where-live .tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.where-live .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.where-live .MenuList li {
+    border-left: 1px solid gray;
+    padding: 20px 15px 20px 15px;
+    flex: 1;
+}
+
+.where-live .MenuList li a {
+    color: #fff;
+}
+
+.where-live .MenuList li:first-child {
+    border-left: 0;
+    border-bottom: 5px solid red;
+}
+
+.where-live .MenuList li:hover {
+    border-bottom: 5px solid red;
+    cursor: pointer;
+}
+
+.where-live .tabcontent{
+    display: block;
+}
+/* end section  launches */
 
 /* slider investment  */
 
@@ -1088,5 +1209,145 @@ background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-link
     font-size: 1rem ;
 }
 /* End container builders */
+/* container tools and help */
+.tools{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: var(--font-family-base);
+}
+
+.tools h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.tools .text-one  {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+.cards-tools{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    max-width: 1168px;
+}
+
+.card-tools {
+    width: 248px;
+    height: 374px;
+    margin: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem;
+    overflow:hidden;
+    
+}
+
+.card-tools.one{
+    background-color: #2574d7;
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/rooftop_1.png?auto=compress,enhance,format&q=50);
+    background-attachment: unset;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.card-tools.two{
+    background-color: #00d1b0;
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/calculator.png?auto=compress,enhance,format&q=50);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card-tools.three {
+    background-color: #ffe7b6;
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/hansjorg-keller-hwTZ7_NUSZ8-unsplash_1.png?auto=compress,enhance,format&q=50);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: inherit;
+}
+
+.card-tools.four{
+    background-color: #c0c7ff;
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/pintura_1.png?auto=compress,enhance,format&q=50);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.title-tools{
+    font-family: var(--font-family-base);
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: relative;
+    top: 23px;
+    padding: 0 2rem;
+}
+.title-tools.two {
+    width: 276px;
+    right: 27px;
+}
+.card-transform {
+    position: relative;
+    top: 328px;
+    transition: top 0.2s;
+    
+}
+
+.card-tools:hover .card-transform {
+    top:75px;
+    
+}
+
+/* End container tools and help */
+/* Container best search  */
+.best-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-best{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: flex-end;
+align-content: center;
+margin-left: 140px;
+}
+
+.text-best h1 {
+    width: 347px;
+    text-align: end;
+}
+
+.text-best p {
+    width: 299px;
+    text-align: end;
+    margin-bottom: 34px;
+}
+
+.btn-best{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn-g{
+    margin-right:15px;
+}
+.btn-g ,.btn-a {
+    border: none;
+    background-color: var(--color-white);
+    
+}
+
 
 

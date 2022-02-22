@@ -212,7 +212,7 @@
             </form>
         </section>
         <!-- End banner and search-->
-        <!-- section launches-->
+        <!-- section launches -->
         <section class="launches-lahaus">
             <div class="launches">
                 <div class="text-launches">
@@ -223,75 +223,308 @@
                 </div>
 
                 <div class="menu-slider-lauches ">
-                    <div class="page" data-modal-state="closed">
-                        <div class="container">
-                            <div class="card-slider">
-                                <div class="card-wrapper">
-                                    <article class="card one">
-                                        <div class="card-category">
-                                            Disponible
-                                        </div>
-                                        <h3 class="card-title">Luna Etapa 2 (Vis)</h3>
-                                        <p class="description-text">Casco Urbano Chia,Chia </p>
-                                        <div class="card-price">
-                                            <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
-                                            <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
-                                            <a class="card-price-text-a" href="#">Ver proyecto <i
-                                                    class="fa fa-arrow-right-light"></i></a>
-                                        </div>
 
-                                    </article>
-                                </div>
-                                <div class="card-wrapper">
-                                    <article class="card two">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'bogota')" id="btn-bogota">Bogotá y
+                            alrededores</button>
+                        <button class="tablinks" onclick="openCity(event, 'medellin')" id="btn-medellin">Medellín y
+                            alrededores</button>
+                        <button class="tablinks" onclick="openCity(event, 'cauca')" id="btn-cauca">Valle del
+                            Cauca</button>
+                        <button class="tablinks" onclick="openCity(event, 'caribe')" id="btn-caribe"> Caribe</button>
+                    </div>
 
-                                        <div class="card-category">
-                                            Disponible
-                                        </div>
-                                        <h3 class="card-title">Serendapia Deluxe</h3>
-                                        <p class="description-text">Chapinero Alto, Bogotá</p>
-                                        <div class="card-price">
-                                            <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
-                                            <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
-                                            <a class="card-price-text-a" href="#">Ver proyecto <i
-                                                    class="fa fa-arrow-right-light"></i></a>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="card-wrapper">
-                                    <article class="card three">
-                                        <div class="card-category">
-                                            Disponible
-                                        </div>
-                                        <h3 class="card-title">Yolo</h3>
-                                        <p class="description-text">Chico Norte, Bogotá</p>
-                                        <div class="card-price">
-                                            <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
-                                            <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
-                                            <a class="card-price-text-a" href="#">Ver proyecto <i
-                                                    class="fa fa-arrow-right-light"></i></a>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="card-wrapper">
-                                    <article class="card four">
-                                        <div class="card-category">
-                                            Disponible
-                                        </div>
-                                        <h3 class="card-title">BE 102-53</h3>
-                                        <p class="description-text">Barrio Pasadena, Bogotá</p>
-                                        <div class="card-price">
-                                            <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
-                                            <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
-                                            <a class="card-price-text-a" href="#">Ver proyecto <i
-                                                    class="fa fa-arrow-right-light"></i></a>
-                                        </div>
-                                    </article>
-                                </div>
+                    <div id="bogota" class="tabcontent">
+                        <div class="page">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card one">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Bogota</h3>
+                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
 
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card two">
+
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Serendapia Deluxe</h3>
+                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card three">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Yolo</h3>
+                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card four">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">BE 102-53</h3>
+                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div id="medellin" class="tabcontent">
+
+                        <div class="page">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card one">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Medellin </h3>
+                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card two">
+
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Serendapia Deluxe</h3>
+                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card three">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Yolo</h3>
+                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card four">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">BE 102-53</h3>
+                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cauca" class="tabcontent">
+
+                        <div class="page">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card one">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Cauca (Vis)</h3>
+                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card two">
+
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Serendapia Deluxe</h3>
+                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card three">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Yolo</h3>
+                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card four">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">BE 102-53</h3>
+                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="caribe" class="tabcontent">
+
+                        <div class="page">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card one">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Caribe</h3>
+                                            <p class="description-text">Casco Urbano Chia,Chia </p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $132.3 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 28 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card two">
+
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Serendapia Deluxe</h3>
+                                            <p class="description-text">Chapinero Alto, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $559.9 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 65 m² · 2 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card three">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">Yolo</h3>
+                                            <p class="description-text">Chico Norte, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $294.0 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 27 m² · 1 Hab · 1 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card four">
+                                            <div class="card-category">
+                                                Disponible
+                                            </div>
+                                            <h3 class="card-title">BE 102-53</h3>
+                                            <p class="description-text">Barrio Pasadena, Bogotá</p>
+                                            <div class="card-price">
+                                                <h3 class="card-price-text-title">Desde $481.5 Millones</h3>
+                                                <p class="card-price-text-p">Desde Desde 57 m² · 1 Hab · 2 bañ</p>
+                                                <a class="card-price-text-a" href="#">Ver proyecto <i
+                                                        class="fa fa-arrow-right-light"></i></a>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
         </section>
         <!-- End section launches-->
@@ -363,78 +596,207 @@
         <!-- container tools to help -->
         <section class="tools">
             <h1>Guías y herramientas para ayudarte con tu compra de vivienda</h1>
-            <p>Tenemos respuesta a tus preguntas. ¡Descúbrelas!</p>
+            <p class="text-one">Tenemos respuesta a tus preguntas. ¡Descúbrelas!</p>
             <article class="cards-tools">
-                <div class="card-tools">
-                    Compra tu primera haus 
+                <div class="card-tools one">
+                    <h3 class="title-tools">Compra tu primera haus</h3>
+                    <div class="card-transform">
+                        <p class="text-tool">Guia de compra <i class="fa fa-arrow-right-light ml-lh-8"></i></p>
+
+                    </div>
                 </div>
+                <div class="card-tools two ">
+                    <h3 class="title-tools two ">Calcula el pago de tu vivienda</h3>
+                    <div class="card-transform">
+                        <p class="text-tool">Calcular ahora <i class="fa fa-arrow-right-light ml-lh-8"></i></p>
+
+                    </div>
+                </div>
+                <div class="card-tools three">
+                    <h3 class="title-tools">Explora tu zona</h3>
+                    <div class="card-transform">
+                        <p class="text-tool">Descúbrelos <i class="fa fa-arrow-right-light ml-lh-8"></i></p>
+
+                    </div>
+                </div>
+                <div class="card-tools four">
+                    <h3 class="title-tools">Tips para tu Haus </h3>
+                    <div class="card-transform">
+                        <p class="text-tool">Cónocelo todo <i class="fa fa-arrow-right-light ml-lh-8"></i></p>
+
+                    </div>
+                </div>
+
+
+
             </article>
 
+
+
+
+        </section>
+        <!--End container tools to help -->
+        <!-- best search -->
+        <section class="best-search">
+            <article class="img-best">
+                <img src="./resources/images/best-search.jpg" alt="">
+            </article>
+            <article class="text-best">
+                <h1>La mejor búsqueda de vivienda a la mano</h1>
+                <p>Descarga nuestra aplicación, comparte y
+                    encuentra tu próximo hogar</p>
+                <div class="btn-best">
+                    <button class="btn-g"><a href="#"><img
+                                src="https://lahaus.imgix.net/static/lh-landing-v2/google-play-button.svg?auto=compress,enhance,format&q=50"
+                                alt="button google play button"></a></button>
+                    <button class="btn-a"><a href="#"><img
+                                src="https://lahaus.imgix.net/static/lh-landing-v2/app-store-button-download.svg?auto=compress,enhance,format&q=50"
+                                alt="app store button "></a></button>
+                </div>
+            </article>
         </section>
 
-
         <!-- Where do you wanna live?  -->
+
+
         <section class="where-live">
             <div class="place-slider">
-                <div class="page" data-modal-state="closed">
-                    <div class="container">
-                        <div class="card-slider">
-                            <div class="card-wrapper">
-                                <article class="card place">
-                                    <div class="grid-images">
-                                        <div class="box1">
-                                            <div class="inner one">
-                                                <h3> Proyecto de vivienda</h3>
-                                            </div>
-                                            <div class="inner two">
-                                                <h3>Apartamentos</h3>
-                                            </div>
-                                            <div class="inner three">
-                                                <h3>Casas</h3>
-                                            </div>
-                                        </div>
-                                        <div class="box2">
-                                            <div class="full one">
-                                                <h3>El poblado</h3>
-                                                <p>Apartamentos</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="card-wrapper">
-                                <article class="card place">
-                                    <div class="grid-images">
-                                        <div class="box1">
-                                            <div class="inner stwo">1</div>
-                                            <div class="inner stwo">2</div>
+                <div class="tab">
+                    <button class="tablinkslive" onclick="City(event, 'one')" id="one-live">Bogotá y
+                        alrededores</button>
+                    <button class="tablinkslive" onclick="City(event, 'two')" id="two-live">Medellín
+                        y
+                        alrededores</button>
+                </div>
 
-                                        </div>
-                                        <div class="box2">
-                                            <div class="full">4</div>
-                                        </div>
+                <div id="one" class="tabcontentlive">
+                    <div class="place-slider">
+                        <div class="page" data-modal-state="closed">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner one">
+                                                        <h3>bogota</h3>
+                                                    </div>
+                                                    <div class="inner two">
+                                                        <h3>Apartamentos</h3>
+                                                    </div>
+                                                    <div class="inner three">
+                                                        <h3>Casas</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full one">
+                                                        <h3>El poblado</h3>
+                                                        <p>Apartamentos</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
                                     </div>
-                                </article>
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner stwo">1</div>
+                                                    <div class="inner stwo">2</div>
+
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full">4</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner">1</div>
+                                                    <div class="inner">2</div>
+                                                    <div class="inner">3</div>
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full">4</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-wrapper">
-                                <article class="card place">
-                                    <div class="grid-images">
-                                        <div class="box1">
-                                            <div class="inner">1</div>
-                                            <div class="inner">2</div>
-                                            <div class="inner">3</div>
-                                        </div>
-                                        <div class="box2">
-                                            <div class="full">4</div>
-                                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="two" class="tabcontentlive">
+                    <div class="place-slider">
+                        <div class="page" data-modal-state="closed">
+                            <div class="container">
+                                <div class="card-slider">
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner one">
+                                                        <h3> medellin </h3>
+                                                    </div>
+                                                    <div class="inner two">
+                                                        <h3>Apartamentos</h3>
+                                                    </div>
+                                                    <div class="inner three">
+                                                        <h3>Casas</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full one">
+                                                        <h3>El poblado</h3>
+                                                        <p>Apartamentos</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
                                     </div>
-                                </article>
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner stwo">1</div>
+                                                    <div class="inner stwo">2</div>
+
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full">4</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-wrapper">
+                                        <article class="card place">
+                                            <div class="grid-images">
+                                                <div class="box1">
+                                                    <div class="inner">1</div>
+                                                    <div class="inner">2</div>
+                                                    <div class="inner">3</div>
+                                                </div>
+                                                <div class="box2">
+                                                    <div class="full">4</div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+      
         <!-- End where do you wanna live?  -->
         <!-- slider investment   -->
         <section class="investment">
@@ -530,14 +892,17 @@
         </section>
         <!-- End container Builders -->
 
+        <!-- ----------------------------------------------------- -->
+
+
+
     </main>
     <script src="./js/counter.js"></script>
     <!-- script slider -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='./js/slick.min.js'></script>
-    <script src="./script.js"></script>
+    <script src="./js/tabs-launches.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/slider-investment.js"></script>
+   <script src="./js/tabs-live.js"></script> 
 </body>
-
-</html><i class="fa fa-2x fa-back-slim-icon fa-flip-horizontal"></i>
