@@ -45,109 +45,6 @@ header label:hover {
     font-weight: 500px;
 }
 
-
-/* @media (max-width:920px) {
-
-header label{
-display: block;
-height: 75px;
-}
-
-.menu {
-position: absolute;
-width: 100%;
-margin-left: -100%;
-transition:all 0.5s;
-z-index: 100;
-}
-
-#boton-menu:checked ~ .menu {
-margin: 0;
-
-}
-
-.menu ul{
-display: block;
-}
-
-.menu li:hover{
-background-color: #000000;
-}
-
-.dropbtn{
-background-color: salmon;
-color: white;
-}
-
-.dropdown-content a {
-color: rgb(255, 255, 255);
-padding: 16px 16px;
-text-decoration: none;
-display: block;
-}
-.dropdown-content a:hover{
-color: salmon;
-
-}
-
-.dropdown:hover .dropbtn {
-color: salmon;
-
-}
-
-}
-@media (max-width:920px) {
-
-header label{
-display: block;
-height: 75px;
-}
-
-.menu {
-position: absolute;
-background-color: salmon;
-width: 100%;
-margin-left: -100%;
-transition:all 0.5s;
-z-index: 100;
-}
-
-#boton-menu:checked ~ .menu {
-
-margin: 0;
-
-}
-
-.menu ul{
-display: block;
-}
-
-.menu li:hover{
-background-color: #000000;
-}
-
-.dropbtn{
-background-color: salmon;
-color: white;
-}
-
-.dropdown-content a {
-color: rgb(255, 255, 255);
-}
-
-.dropdown-content a:hover{
-color: salmon;
-background-color: #000000;
-}
-
-.dropdown:hover .dropbtn {
-color: salmon;
-background-color: #000000;
-}
-
-
-}
-*/
 /* Menu Desktop*/
 .logo-haus {
     width: 124px;
@@ -160,8 +57,6 @@ background-color: #000000;
 #botton-menu {
     display: none;
 }
-
-
 
 /* Dropdow explore properties*/
 
@@ -530,7 +425,7 @@ background-color: #000000;
 /* end Header */
 /* section search-location */
 .search-location {
-    background-image: url(../resources/imagenes/background-banner.jpg);
+    background-image: url(../resources/images/background-banner.jpg);
     height: 490px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -751,44 +646,19 @@ background-color: #000000;
 
 }
 
-@media (max-width:768px) {
-    .launches {
-        flex-direction: column;
-    }
-}
 
-/* slider */
-.menu-slider-lauches .no-scroll {
+
+/* slider menu slider launches and where live */
+
+.menu-slider-lauches .no-scroll ,.where-live .no-scroll  {
     overflow: hidden;
 }
-
-.menu-slider-lauches .container {
-    padding: 2em;
-    min-height: 100vh;
-    display: flex;
-}
-
-.menu-slider-lauches .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-.menu-slider-lauches .slick-slide {
-    padding: 2em 0.5em;
-}
-
-.menu-slider-lauches .card-slider {
+.menu-slider-lauches .card-slider , .where-live .card-slider  {
     margin: auto;
     width: 100%;
 }
-
-.menu-slider-lauches .card {
+.menu-slider-lauches .card , .where-live .card {
     display: flex;
-    padding: 2em;
     border: none;
     flex-direction: column;
     align-items: flex-start;
@@ -797,12 +667,30 @@ background-color: #000000;
     overflow: hidden;
     position: relative;
     z-index: 1;
-    height:380px;
     box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
     background-size:contain;
     background-repeat: no-repeat;
     background-color: var(--color-white);
     font-family: var(--font-family-base);
+}
+
+/* menu slider launches */
+.menu-slider-lauches .container{
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+}
+
+.menu-slider-lauches .slick-slide {
+    padding: 2em 0.5em;
+}
+.where-live.place-slider .slick-slide {
+    padding: 2em 0em;
+  }
+
+.menu-slider-lauches .card{
+    padding: 2em;
+    height:380px;
 }
 
 .menu-slider-lauches .card::before{
@@ -831,7 +719,6 @@ background-color: #000000;
 .menu-slider-lauches .card.four{
     background-image: url(https://lahaus.imgix.net/uploads/promoted_content/custom_card_attachment/picture/1104/be_102_53.jpg?auto=compress%2Cenhance%2Cformat&q=60);
 }
-
 
 .menu-slider-lauches .information-card {
     display: flex;
@@ -886,7 +773,9 @@ background-color: #000000;
     color: var(--color-blue);
 }
 
-/* section end  launches */
+
+
+/* end section  launches */
 
 /* container How we make it possible */
 section.it-possible {
@@ -983,15 +872,33 @@ section.it-possible.title-possible {
     color: var(--color-white);
     text-decoration: none;
   }
+/* section launches */
 
 /* section where live */
+.where-live .card.place {
+    padding: 0em;
+    height: auto;
 
-.grid-images {
+  }
+
+.where-live .container {
+    background: pink;
+    padding: 2em;
+    min-height: 50vh;
+    display: flex;
+  }
+
+.where-live .inner{
+    flex-grow: 2;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.where-live .grid-images {
   display: flex;
   flex-direction: row;
 }
 
-.grid-images>* {
+.where-live .grid-images>* {
   text-align: center;
   border: 5px solid white;
   border-radius: 20px;
@@ -999,34 +906,187 @@ section.it-possible.title-possible {
   height: 300px;
 }
 
-.box1 {
+.where-live .box1 {
   display: flex;
   flex-direction: column;
+  
 }
 
-.inner {
-  flex-grow: 2;
-  border: 5px solid white;
-  border-radius: 20px;
+.where-live .inner.one {
+    background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/proyectos.jpg?auto=compress,enhance,format&q=60);
 }
-.inner.one{
-background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/proyectos.jpg?auto=compress,enhance,format&q=60");
+.where-live .inner.two {
+    background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/apartamentos.jpg?auto=compress,enhance,format&q=60) ;
+}
+.where-live .inner.three {
+background-image:url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/casas.jpg?auto=compress,enhance,format&q=60);
+}
+.where-live .full{
+    height: 277px;
+    border-radius: 10px;
+    
+}
+.where-live .full.one {
+  background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/location-links-images/mde_poblado.jpg?auto=compress,enhance,format&amp;q=60);
+  background-size: cover;
 }
 
-.full {
-  height: 277px;
-  background: aqua;
+/* slider investment  */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.text {
+    font-size: 1rem;
+    padding: 112px 119px 36px 177px;
+    text-align: center;
+    font-family: var(--font-family-base);
+    
 }
 
-.card.place {
-  padding: 0em;
-  height: auto;
+.img-investment{
+    position: relative;
+    padding-bottom: 21px;
+}
+.img-investment.forbes {
+    left: 443px;
+    padding: 9px 10px;
 }
 
-.place-slider .slick-slide {
-  padding: 2em 0em;
+.img-investment.bloomberg {
+    left: 349px;
+    padding: 9px 10px 10px;
+    
 }
-.text{
-  color: white;
+
+.img-investment.crunch {
+    left: 435px;
+    padding: 9px 10px 10px;
+    
 }
+.img-investment.crunch img{
+    width: 158px;
+}
+.img-investment.spring{
+    left: 373px;
+    padding: 9px 10px 10px;
+}
+.img-investment.lr {
+    left: 422px;
+    padding: 9px 10px 10px;
+}
+.img-investment.lr img {
+    width: 158px;
+}
+
+.prev,.next,.where-live .slick-prev ,.where-live .slick-next{
+    cursor: pointer;
+    position: absolute;
+    top: 128px;
+    width: 4.8rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff;
+    color: #5b6866;
+    height: 4.8rem;
+}
+.prev ,.where-live .slick-prev {
+    padding: 21px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.where-live .slick-next::before,.where-live .slick-prev::before{
+   content: '';
+}
+.next ,.where-live .slick-next{
+    padding: 19px 31px;
+    right: 0;
+    border-radius:50%;
+}
+
+
+.prev:hover, .next:hover {
+    border: 1px solid var(--color-blue);
+    border-radius: 58px;
+}
+
+.btn-radio{
+    text-align:center
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color:var(--color-blue);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/* end slider investment  */
+/* container builders */
+.builders{
+    background-color: #2574d7;
+    background-image: url(https://lahaus.imgix.net/static/lh-landing-v2/bk-allies-banner.png?auto=compress%2Cformat&q=60);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+  }
+
+
+.title-builders{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: var(--font-family-base);
+    padding:40px;
+ 
+}
+
+.text-builders{
+    color: var(--color-white);
+    font-size: 1rem;
+    font-family: var(--font-family-base);
+    position: relative;
+    bottom: 41px;
+    left: 38px;
+}
+.btn-buiders {
+    background-color: #f8f08e;
+    position: relative;
+    bottom: 15px;
+    left: 38px;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-buiders a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 1rem ;
+}
+/* End container builders */
+
 
