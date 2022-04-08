@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: silka;
     src: url(./fonts/silka-regular-webfont.woff2);
@@ -906,7 +905,202 @@
 }
 
 /* end section  launches */
+/* section launches animation  */
+.container-luch-animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 35px;
+}
 
+.container-luch-animation hr {
+    width: 252px;
+    height: 2px;
+    color: black;
+    background-color: black;
+
+}
+
+.container-one-lz {
+    margin: 76px;
+}
+
+.card-descrip {
+    color: var(--color-light-blue);
+    font-size: 2.5rem;
+    font-family: var(--font-family-title);
+
+}
+
+
+.card-descrip b {
+    overflow: hidden;
+    position: relative;
+    height: 36vh;
+    top: 51px;
+}
+
+.lunch-animation-title {
+    font-size: 3rem;
+
+}
+
+.lunch-animation-p {
+    font-size: 1rem;
+    width: 249px;
+
+}
+
+.card-descrip .innercard-descrip {
+    display: inline-block;
+    position: relative;
+    /*animation*/
+    animation: move 4s;
+    /*animation-iteration-count*/
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    animation-delay: 1s;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-bottom: 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slider-v-img-card {
+    display: flex;
+}
+
+.title-slider-v {
+    font-size: 1.5rem;
+    font-family: var(--font-family-title);
+    margin: 8px;
+}
+
+.text-slider-v {
+    font-size: 1rem;
+    font-family: var(--font-family-base);
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    margin: 5px;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-o-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+/* <End Section launches animation  */
 /* container How we make it possible */
 section.it-possible {
     display: flex;
@@ -1718,104 +1912,169 @@ header label:hover {
 }
 
 @media (max-width:990px) {
-
-    .container-search,
-    .cards-it-possible,
-    .best-search {
-        flex-direction: column;
+    .search-location .link-search {
+        padding: 25px;
+        flex-wrap: nowrap;
     }
 
-    .container-search,
-    .launches,
-    .login-plus {
-        margin: 0px;
+    .search-location .title-banner {
+        font-size: 2rem;
     }
 
-    .search-location {
-        height: 94vh;
+    .dropdown-explore:hover .dropdown-explore-content {
+        left: -604px;
     }
+}
+.title-explore-dw{
+    width: 35%;
+}
 
-    .dropdown-type,
-    .dropdown-room {
-        position: relative;
-        display: block;
-    }
+.explore-text p, .buy-text p {
+    width: 32%;
+}
 
-    .launches {
-        display: block;
-    }
+.menu .dropdown-explore ul, 
+.menu .dropdown-buy ul,
+.cards-it-possible{
+    display: flex;
+    flex-direction: column;
+}
+.explore-text{
+    padding-left: 267px;
+}
 
-    .text-launches,
-    .menu-slider-lauches {
-        width: 100%;
-    }
+.buy-text {
+    padding-left: 199px;
+}
+.btn-pg{
+    margin: 10px;
+}
+.dropdown-invest:hover .dropdown-invest-content{
+    left: -233px;
+}
+.container-cards-invest{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .title-invest-dw{
+    width: 12%;
+    padding-left: 2%;
+  }
+.card-invest{
+    width: 22%;
+    padding: 3%;
+    margin: 3%;
+}
 
-    section.it-possible {
-        height: 750px;
-    }
+.panel-dropdown-explore,
+.panel-dropdown-buy,
+.container-search .cards-it-possible,
+.best-search,
+.container-luch-animation {
+    flex-direction: column;
+}
 
-    .login-plus {
-        justify-content: center;
-        height: 500px;
+.container-search {
+    margin: 23px;
+}
 
-    }
+.launches,
+.login-plus,
+.container-one-lz {
+    margin: 0px;
+}
 
-    section.login-plus>* {
-        margin: 3% 2%;
-        text-align: center;
-    }
+.search-location {
+    height: 94vh;
+}
 
-    .img-best-file {
-        width: 100%;
-    }
+.dropdown-type,
+.dropdown-room {
+    position: relative;
+    display: block;
+}
 
-    .text-best {
-        margin-left: 0px;
-    }
+.launches {
+    display: block;
+}
 
-    .where-live .grid-images>* {
-        width: 84vw;
-    }
+.text-launches,
+.menu-slider-lauches {
+    width: 100%;
+}
 
-    .img-investment {
-        left: 0px !important;
-        padding: 0px !important;
-    }
+/* launch animation */
+.card-descrip b {
+    top: 0;
+}
 
-    .img-investment>img {
-        max-width: 50% !important;
-        margin-left: 38%;
-    }
+section.it-possible,
+.container-luch-animation {
+    height: 750px;
+}
 
-    .img-investment.bloomberg>img,
-    .img-investment.spring>img {
-        margin-left: 26%;
-    }
+.login-plus {
+    justify-content: center;
+    height: 500px;
 
-    .img-investment.crunch>img {
-        margin-left: 29%;
-    }
+}
 
-    .img-investment.lr img {
-        width: 80px;
-    }
+section.login-plus>* {
+    margin: 3% 2%;
+    text-align: center;
+}
 
-    .text {
-        padding: 107px 68px;
-    }
+.img-best-file {
+    width: 100%;
+}
 
-    .logo-footer,
-    .citys,
-    .copy-r {
-        flex-direction: column;
-    }
+.text-best {
+    margin-left: 0px;
+}
 
-    .copy-r>* {
-        margin: 3% 2%;
-    }
+.where-live .grid-images>* {
+    width: 84vw;
+}
 
-    .copy-r .border-li {
-        border-right: none;
+.img-investment {
+    left: 0px !important;
+    padding: 0px !important;
+}
 
-    }
+.img-investment>img {
+    max-width: 50% !important;
+    margin-left: 38%;
+}
+
+.img-investment.bloomberg>img,
+.img-investment.spring>img {
+    margin-left: 26%;
+}
+
+.img-investment.crunch>img {
+    margin-left: 29%;
+}
+
+.img-investment.lr img {
+    width: 80px;
+}
+
+.text {
+    padding: 107px 68px;
+}
+
+.logo-footer,
+.citys,
+.copy-r {
+    flex-direction: column;
+}
+
+.copy-r>* {
+    margin: 3% 2%;
+}
+
+.copy-r .border-li {
+    border-right: none;
+
 }
