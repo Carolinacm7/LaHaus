@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: silka;
     src: url(./fonts/silka-regular-webfont.woff2);
@@ -637,45 +636,48 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 5px 35px ;
-  }
-  .container-luch-animation hr {
+    margin: 5px 35px;
+}
+
+.container-luch-animation hr {
     width: 258px;
     height: 2px;
     color: black;
     background-color: black;
-   
-  }
-  .container-one-lz {
-      margin:76px;
-  }
-  .card-descrip {
+
+}
+
+.container-one-lz {
+    margin: 76px;
+}
+
+.card-descrip {
     font-size: 2.5rem;
     font-family: var(--font-family-title);
-  }
-  
-  
-  .card-descrip b {
+}
+
+
+.card-descrip b {
     overflow: hidden;
     position: relative;
     height: 36vh;
     top: 51px;
-    
-  }
-  
-  .lunch-animation-title {
+
+}
+
+.lunch-animation-title {
     font-size: 3rem;
     font-family: var(--font-family-title);
-  }
+}
 
-  .lunch-animation-p{
+.lunch-animation-p {
     font-size: 1rem;
     width: 249px;
     margin: 10px;
     font-family: var(--font-family-base);
-  }
-  
-  .card-descrip .innercard-descrip {
+}
+
+.card-descrip .innercard-descrip {
     display: inline-block;
     position: relative;
     /*animation*/
@@ -685,143 +687,145 @@
     animation-iteration-count: infinite;
     /*animation-delay*/
     animation-delay: 1s;
-  }
+}
 
-  .cards-container {
-      display: flex;
-      flex-direction: row;
-      
-      border-radius: 10px;
-      
-      padding: 10px 25px;
-      margin-bottom: 35px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+.cards-container {
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+
+    padding: 10px 25px;
+    margin-bottom: 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .slider-v-img-card {
     display: flex;
     margin: 10px;
 }
-  .title-slider-v {
+
+.title-slider-v {
     font-size: 2rem;
     font-family: var(--font-family-title);
-    
-  }
 
-  .text-slider-v {
-      font-size: 1rem;
-      color: var(--color-primary);
-      font-family: var(--font-family-base);
-  }
-  
-  @keyframes move {
+}
+
+.text-slider-v {
+    font-size: 1rem;
+    color: var(--color-primary);
+    font-family: var(--font-family-base);
+}
+
+@keyframes move {
     0% {
-      top: 0px;
+        top: 0px;
     }
-  
+
     20% {
-      top: -50px;
+        top: -50px;
     }
-  
+
     40% {
-      top: -100px;
+        top: -100px;
     }
-  
+
     60% {
-      top: -150px;
+        top: -150px;
     }
-  
+
     80% {
-      top: -200px;
+        top: -200px;
     }
-  }
-  
-  @-webkit-keyframes move {
+}
+
+@-webkit-keyframes move {
     0% {
-      top: 0px;
+        top: 0px;
     }
-  
+
     20% {
-      top: -50px;
+        top: -50px;
     }
-  
+
     40% {
-      top: -100px;
+        top: -100px;
     }
-  
+
     60% {
-      top: -150px;
+        top: -150px;
     }
-  
+
     80% {
-      top: -200px;
+        top: -200px;
     }
-  }
-  
-  @-moz-keyframes move {
+}
+
+@-moz-keyframes move {
     0% {
-      top: 0px;
+        top: 0px;
     }
-  
+
     20% {
-      top: -50px;
+        top: -50px;
     }
-  
+
     40% {
-      top: -100px;
+        top: -100px;
     }
-  
+
     60% {
-      top: -150px;
+        top: -150px;
     }
-  
+
     80% {
-      top: -200px;
+        top: -200px;
     }
-  }
-  
-  @-o-keyframes move {
+}
+
+@-o-keyframes move {
     0% {
-      top: 0px;
+        top: 0px;
     }
-  
+
     20% {
-      top: -50px;
+        top: -50px;
     }
-  
+
     40% {
-      top: -100px;
+        top: -100px;
     }
-  
+
     60% {
-      top: -150px;
+        top: -150px;
     }
-  
+
     80% {
-      top: -200px;
+        top: -200px;
     }
-  }
-  
-  @keyframes move {
+}
+
+@keyframes move {
     0% {
-      top: 0px;
+        top: 0px;
     }
-  
+
     20% {
-      top: -50px;
+        top: -50px;
     }
-  
+
     40% {
-      top: -100px;
+        top: -100px;
     }
-  
+
     60% {
-      top: -150px;
+        top: -150px;
     }
-  
+
     80% {
-      top: -200px;
+        top: -200px;
     }
-  }
+}
 
 /* slider menu slider launches and where live */
 
@@ -1911,20 +1915,89 @@ header label:hover {
 
 @media (max-width:990px) {
 
-    .container-search,
-    .cards-it-possible,
-    .best-search {
+
+    .search-location .title-banner {
+        font-size: 2rem;
+    }
+
+    .dropdown-explore:hover .dropdown-explore-content {
+        left: -607px;
+    }
+
+    .title-explore-dw {
+        width: 35%;
+    }
+
+    .explore-text p,
+    .buy-text p {
+        width: 32%;
+    }
+
+    .menu .dropdown-explore ul,
+    .menu .dropdown-buy ul,
+    .cards-it-possible {
+        display: flex;
         flex-direction: column;
     }
 
-    .container-search,
+    .explore-text {
+        padding-left: 267px;
+    }
+
+    .buy-text {
+        padding-left: 199px;
+    }
+
+    .btn-pg {
+        margin: 10px;
+    }
+
+    .dropdown-invest:hover .dropdown-invest-content {
+        left: -233px;
+    }
+
+    .container-cards-invest {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .title-invest-dw {
+        width: 12%;
+        padding-left: 2%;
+    }
+
+    .card-invest {
+        width: 22%;
+        padding: 3%;
+        margin: 3%;
+    }
+
+    .panel-dropdown-explore,
+    .panel-dropdown-buy,
+    .container-search .cards-it-possible,
+    .best-search,
+    .container-luch-animation {
+        flex-direction: column;
+    }
+
+    .container-search {
+        margin: 23px;
+    }
+
     .launches,
-    .login-plus {
+    .login-plus,
+    .container-one-lz {
         margin: 0px;
     }
 
     .search-location {
-        height: 94vh;
+        height: 115vh;
+    }
+
+    .search-location .link-search {
+        flex-wrap: nowrap;
+        margin: 2px;
     }
 
     .dropdown-type,
@@ -1942,7 +2015,13 @@ header label:hover {
         width: 100%;
     }
 
-    section.it-possible {
+    /* launch animation */
+    .card-descrip b {
+        top: 0;
+    }
+
+    section.it-possible,
+    .container-luch-animation {
         height: 750px;
     }
 
@@ -2010,4 +2089,5 @@ header label:hover {
         border-right: none;
 
     }
+
 }
